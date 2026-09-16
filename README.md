@@ -4,7 +4,7 @@
 
 원본을 수정하지 않고 필요한 코드·지표·대표 입력/결과를 선별했다. 정리일은 2026-09-16이다. 팀 프로젝트 전체를 복제하지 않았으며, 이 저장소의 `code/selected`는 해당 실험을 설명하는 코드 발췌다. 전체 FireSight 앱이나 모든 의존성이 포함된 배포본이 아니다.
 
-**[영상 갤러리 열기](https://yusihyeon.github.io/ThermalCameraResearch/gallery.html)** · [영상 6개와 보존 MP4 다운로드](MEDIA.md) · [검증 기록](VALIDATION.md) · [종합 연구 기록](https://github.com/YuSihyeon/ResearchArchive)
+**[영상 갤러리 열기](https://yusihyeon.github.io/ThermalCameraResearch/gallery.html)** · [영상 6개와 보존 MP4 다운로드](MEDIA.md) · [검증 기록](VALIDATION.md) · [전체 원본 데이터·복원 안내](DATA_AND_RESTORE.md)
 
 ## 읽는 순서
 
