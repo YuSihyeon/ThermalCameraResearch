@@ -1,0 +1,73 @@
+# Thermal Camera Research
+
+열화상 카메라 입력을 확인한 초기 실험부터 밝기 기반 점군 표현, 농연 영상의 윤곽선 개선, 거리별 선 굵기와 지속 FPS 검증까지 정리한 연구 아카이브다. **실제 확보된 성과는 카메라 표시·캡처, intensity height field, 윤곽 HUD, 합성 거리 기반 표시, PC에서의 지속 처리 검증이다. 실제 거리·절대온도 측정과 Jetson·AR 안경 실장 검증은 완료되지 않았다.**
+
+원본을 수정하지 않고 필요한 코드·지표·대표 입력/결과를 선별했다. 정리일은 2026-09-16이다. 팀 프로젝트 전체를 복제하지 않았으며, 이 저장소의 `code/selected`는 해당 실험을 설명하는 코드 발췌다. 전체 FireSight 앱이나 모든 의존성이 포함된 배포본이 아니다.
+
+[영상 6개와 보존 MP4 다운로드](MEDIA.md) · [검증 기록](VALIDATION.md) · [전체 원본 데이터·복원 안내](DATA_AND_RESTORE.md)
+
+## 영상과 설명
+
+영상 제목이나 미리보기를 누르면 해당 MP4 파일을 열 수 있습니다.
+
+| 영상 | 설명 |
+|---|---|
+| [**Boson HUD 보존 영상**](public-media/boson-test.mp4)<br>[![Boson HUD 보존 영상 미리보기](public-media/boson-test.jpg)](public-media/boson-test.mp4) | 10초. 직접 제공된 초록 윤곽 HUD 영상입니다. 이미 합성된 표시 결과이며 원시 센서·절대온도 자료는 아닙니다. [보존 MP4](https://github.com/YuSihyeon/ThermalCameraResearch/releases/download/thermal-media-2026-09-16/boson-test.mp4) |
+| [**거리별 굵기 · 가정 거리 시연**](public-media/distance-preview.mp4)<br>[![거리별 굵기 · 가정 거리 시연 미리보기](public-media/distance-preview.jpg)](public-media/distance-preview.mp4) | 12초. 가정한 거리값에 따라 선 굵기를 바꾼 결과입니다. 열화상 거리 복원이나 레이더 실측 연동 결과는 아닙니다. [보존 MP4](https://github.com/YuSihyeon/ThermalCameraResearch/releases/download/thermal-media-2026-09-16/distance-preview.mp4) |
+| [**농연 입력 · SmokeBasement**](public-media/smoke-original.mp4)<br>[![농연 입력 · SmokeBasement 미리보기](public-media/smoke-original.jpg)](public-media/smoke-original.mp4) | 12초. 공개 열화상 데이터에서 선정·재표본화한 입력 구간입니다. 직접 Boson으로 촬영한 농연 실험과 구분합니다. [보존 MP4](https://github.com/YuSihyeon/ThermalCameraResearch/releases/download/thermal-media-2026-09-16/smoke-original.mp4) |
+| [**TEED 구조 경계 후처리**](public-media/smoke-structural.mp4)<br>[![TEED 구조 경계 후처리 미리보기](public-media/smoke-structural.jpg)](public-media/smoke-structural.mp4) | 12초. 농연 입력의 경계를 선택·세선화한 출력입니다. 선 점유율 감소를 장애물 검출 정확도 향상률로 해석하지 않습니다. [보존 MP4](https://github.com/YuSihyeon/ThermalCameraResearch/releases/download/thermal-media-2026-09-16/smoke-structural.mp4) |
+| [**Balanced · 2px 표시 후보**](public-media/smoke-balanced-2px.mp4)<br>[![Balanced · 2px 표시 후보 미리보기](public-media/smoke-balanced-2px.jpg)](public-media/smoke-balanced-2px.mp4) | 12초. 같은 확률맵에서 상세도와 선 두께를 조절한 비교입니다. 런타임 기본값은 1px이며 실제 안경 실장 평가는 아닙니다. [보존 MP4](https://github.com/YuSihyeon/ThermalCameraResearch/releases/download/thermal-media-2026-09-16/smoke-balanced-2px.mp4) |
+| [**연속 굵기 · 처리 방식 비교**](public-media/realtime-comparison.mp4)<br>[![연속 굵기 · 처리 방식 비교 미리보기](public-media/realtime-comparison.jpg)](public-media/realtime-comparison.mp4) | 12초. 공개 열화상과 합성 거리 입력으로 만든 비교 영상입니다. PC 지속 FPS 검증 조건과 수치는 본문에 따로 기록했습니다. [보존 MP4](https://github.com/YuSihyeon/ThermalCameraResearch/releases/download/thermal-media-2026-09-16/realtime-comparison.mp4) |
+
+Boson HUD를 제외한 다섯 영상은 SmokeBasement(Jianzhu Huai, 2025, CC BY 4.0)의 선정·재표본화 또는 처리 파생물입니다. [영상별 원본 정보](MEDIA.md) · [데이터 출처](docs/SOURCE_CREDITS.md).
+
+## 읽는 순서
+
+| 문서 | 다루는 내용 |
+|---|---|
+| [1. 입력과 출처](docs/01-inputs.md) | 직접 카메라, Boson HUD, 공개 농연 데이터, 합성 거리의 구분 |
+| [2. 처리 과정과 선택 이유](docs/02-process.md) | 실제 수식, threshold, 후처리, 파인튜닝, 거리 표시·시간 처리 |
+| [3. 결과와 검증](docs/03-results.md) | 실험별 숫자·입출력 연결·조건·실패·재검산 |
+| [4. 분석과 후속 연구](docs/04-analysis.md) | 무엇이 확인됐고 무엇이 남았는지, 다음 실험 설계 |
+| [코드 안내](code/README.md) | 원본 스크립트와 선별 코드의 용도·재현 범위 |
+| [자료 출처](docs/SOURCE_CREDITS.md) | 공개 데이터 인용, 장비 설명 출처, 변경 사항 |
+
+## 연구의 흐름
+
+| 단계 | 의도 | 실제로 한 일 | 남은 경계 |
+|---|---|---|---|
+| 초기 카메라·점군 탐색 | 열화상 입력을 눈으로 보고 공간 표현으로 확장 | UVC/OpenCV 표시, 52장 회색 프레임, PLY 2개와 CloudCompare 시각화 | 밝기를 z로 바꾼 height field; metric depth 아님 |
+| 2026-09-06 농연 윤곽 실험 | 굵은 초록선이 배경을 가리는 문제 완화 | TEED 후처리, 480개 fusion 파라미터 의사 라벨 학습, PiDiNet 비교 | 장애물 정답 라벨·회피 행동 검증 없음 |
+| 2026-09-08 표시 검토 | 검출 상세도와 최종 선 굵기 분리 | 동일 확률맵에서 detailed/balanced/sparse와 1/2px 비교 | 모니터 판단이며 실제 안경 평가는 아님 |
+| 2026-09-10 미팅 방향 | 거리와 열 신호를 독립적인 입력으로 다루기 | 가정 거리·상대 후보 시연, 센서/rosbag 수집 요구 정리 | 레이더·온도 실측 연동 전 |
+| 2026-09-14 거리 굵기 | 거리 구간 경계의 갑작스러운 폭 변화 완화 | 연속 smoothstep, 50ms EMA, invalid/stale/future 정책 | 거리 맵 자체는 합성값 |
+| 2026-09-14 지속 FPS | 평균 처리량 외에 30fps 지속성 확인 | CPU/CUDA/CUDA Graph 각 180초, MP4 write 포함 비교 | RTX PC 시험; Jetson·센서 노출→안경 지연 아님 |
+
+초기 파일의 정확한 실험일은 확정하지 않았다. 뒤 단계 날짜는 해당 보고서의 기록일이다.
+
+## 대표 결과
+
+![농연 열화상 처리 비교](docs/evidence/obstacle-edges/smoke-comparison.png)
+
+위 그림은 공개 SmokeBasement 데이터의 비교 결과다. 직접 보유한 Boson의 실측 농연 결과로 바꾸어 부르지 않는다.
+
+- **입력→PLY 검산:** `frame_0.png`에서 생성된 20,480점/81,920점의 x/y와 `z = intensity / 255 × 3000`이 저장된 PLY 전체와 일치했다. z 수식 최대 오차는 0이었다. 이는 변환 성공이며 거리 복원 성공이 아니다.
+- **농연 TEED 구조 경계:** 엣지 점유율 12.27% → 1.51%. 약 87.7%의 표시 면적 감소이며 검출 정확도 향상 수치가 아니다.
+- **모니터 표시 후보:** legacy 11.50%, Balanced 1px 1.18%, Balanced 2px 2.63% 점유율. 2px는 가독성 비교의 우선 후보였고 런타임 기본값은 1px였다.
+- **연속 굵기:** 합성 정지면 노이즈에서 폭 표준편차 0.1560px → 0.0864px. 검출 경계의 깜빡임이나 거리 오차를 해결한 수치가 아니다.
+- **RTX 5060 Ti CUDA Graph FP32:** 180초/5,401프레임, 30.002fps, 처리 P99 10.981ms. 원본 120프레임 공개 영상을 가속 반복하고 합성 거리 TCP 입력을 사용했다. 실제 센서·디스플레이·Jetson 성능을 뜻하지 않는다.
+
+세부 표, 실행 조건과 실제 CSV/JSON 링크는 [결과 문서](docs/03-results.md)에 있다. 새로운 모델 학습이나 현장 실험을 수행한 아카이브가 아니라, 기존 결과를 검토하고 일부 수치·파일 무결성을 다시 확인한 기록이다.
+
+## 보존 구조
+
+```text
+docs/                입력·처리·결과·분석과 작은 근거 파일
+code/original/       초기 카메라·height field·합성 radar 원본
+code/selected/       농연 윤곽/HUD/거리 표시 실험에 직접 필요한 코드
+media/               원본/비교 영상과 52장 입력 프레임의 로컬 보존본, Git 제외
+public-media/        공개 영상 6개의 재생용 미리보기·썸네일·해시 목록
+source-map.json      원본 절대경로·SHA-256·복사/가공 이력, 로컬 전용
+```
+
+대형 동영상, 전체 팀 저장소, 외부 모델 전체 구현/가중치, 가상환경, cache, 장비 견적서·연락처는 코드 저장소에 포함하지 않았다. 원본 자료와 선별본의 해시는 로컬 전용 `source-map.json`으로 추적한다. 공개 가능한 동영상 배포 위치는 저장소의 별도 릴리스 안내를 따른다.
