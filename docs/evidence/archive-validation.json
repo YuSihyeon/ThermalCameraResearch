@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-16",
+  "files": 122,
+  "bytes": 27653834,
+  "json_files": 22,
+  "python_files_syntax_checked": 16,
+  "markdown_local_links": 123,
+  "public_videos_full_decode": [
+    {
+      "file": "public-media/boson-test.mp4",
+      "expected": 90,
+      "decoded": 90
+    },
+    {
+      "file": "public-media/boson-test.webm",
+      "expected": 90,
+      "decoded": 90
+    },
+    {
+      "file": "public-media/distance-preview.mp4",
+      "expected": 120,
+      "decoded": 120
+    },
+    {
+      "file": "public-media/distance-preview.webm",
+      "expected": 120,
+      "decoded": 120
+    },
+    {
+      "file": "public-media/realtime-comparison.mp4",
+      "expected": 120,
+      "decoded": 120
+    },
+    {
+      "file": "public-media/realtime-comparison.webm",
+      "expected": 120,
+      "decoded": 120
+    },
+    {
+      "file": "public-media/smoke-balanced-2px.mp4",
+      "expected": 120,
+      "decoded": 120
+    },
+    {
+      "file": "public-media/smoke-balanced-2px.webm",
+      "expected": 120,
+      "decoded": 120
+    },
+    {
+      "file": "public-media/smoke-original.mp4",
+      "expected": 120,
+      "decoded": 120
+    },
+    {
+      "file": "public-media/smoke-original.webm",
+      "expected": 120,
+      "decoded": 120
+    },
+    {
+      "file": "public-media/smoke-structural.mp4",
+      "expected": 120,
+      "decoded": 120
+    },
+    {
+      "file": "public-media/smoke-structural.webm",
+      "expected": 120,
+      "decoded": 120
+    }
+  ],
+  "potential_contact_files": [],
+  "issues": [],
+  "status": "passed",
+  "scope": "Archive integrity and full public-preview decoding; not retraining, camera acquisition, Jetson or physical sensor validation."
+}

@@ -1,0 +1,93 @@
+{
+  "review_date": "2026-09-16",
+  "scope": "existing artifacts only; no original code executed",
+  "frame_count": 52,
+  "all_frames_gray_u8_640x512": true,
+  "pointcloud_formula_checks": [
+    {
+      "file": "thermal_pointcloud.ply",
+      "stride": 4,
+      "actual_points": 20480,
+      "expected_points": 20480,
+      "xy_match": true,
+      "max_z_formula_error": 0.0,
+      "xyz_min": [
+        0.0,
+        0.0,
+        305.8823547363281
+      ],
+      "xyz_max": [
+        636.0,
+        508.0,
+        3000.0
+      ],
+      "rgb_matches_gray": null,
+      "meaning": "x/y pixels, z=intensity/255*3000, arbitrary display units"
+    },
+    {
+      "file": "thermal_pointcloud_big.ply",
+      "stride": 2,
+      "actual_points": 81920,
+      "expected_points": 81920,
+      "xy_match": true,
+      "max_z_formula_error": 0.0,
+      "xyz_min": [
+        0.0,
+        0.0,
+        258.82354736328125
+      ],
+      "xyz_max": [
+        638.0,
+        510.0,
+        3000.0
+      ],
+      "rgb_matches_gray": true,
+      "meaning": "x/y pixels, z=intensity/255*3000, arbitrary display units"
+    }
+  ],
+  "original_code_syntax": [
+    {
+      "file": "code/original/firesight_radar_core.py",
+      "status": "parse_pass",
+      "error": null
+    },
+    {
+      "file": "code/original/flir_view_test.py",
+      "status": "parse_pass",
+      "error": null
+    },
+    {
+      "file": "code/original/thermal_capture.py",
+      "status": "parse_pass",
+      "error": null
+    },
+    {
+      "file": "code/original/thermal_image_to_pointcloud.py",
+      "status": "parse_pass",
+      "error": null
+    },
+    {
+      "file": "code/original/thermal_image_to_pointcloud_backup.py",
+      "status": "parse_pass",
+      "error": null
+    },
+    {
+      "file": "docs/evidence/history/thermal_image_to_pointcloud.py.save",
+      "status": "parse_fail",
+      "error": {
+        "line": 35,
+        "message": "invalid syntax. Perhaps you forgot a comma?"
+      }
+    },
+    {
+      "file": "docs/evidence/history/thermal_image_to_pointcloud.py.save.1",
+      "status": "parse_fail",
+      "error": {
+        "line": 1,
+        "message": "invalid syntax"
+      }
+    }
+  ],
+  "thermal_test_current_file_count": 0,
+  "duplicate_distance_preview_identical": true
+}

@@ -1,0 +1,123 @@
+{
+  "videos": [
+    {
+      "name": "열화상 카메라 input.mp4",
+      "source_sha256": "523928b7ee4f3449788aebc90adb3e829f955e8ba5f4121ad2bf703a61350ce5",
+      "bytes": 15081043,
+      "decoded_frame_count": 1121,
+      "fps": 29.97326203208556,
+      "duration_seconds": 37.4,
+      "width": 1080,
+      "height": 1920,
+      "codec_fourcc": "hevc",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "seconds": 0.0,
+          "derived_preview": "media/private-review/thermal-camera-input-00000.jpg"
+        },
+        {
+          "index": 280,
+          "seconds": 9.341659232827832,
+          "derived_preview": "media/private-review/thermal-camera-input-00280.jpg"
+        },
+        {
+          "index": 560,
+          "seconds": 18.683318465655663,
+          "derived_preview": "media/private-review/thermal-camera-input-00560.jpg"
+        },
+        {
+          "index": 840,
+          "seconds": 28.024977698483497,
+          "derived_preview": "media/private-review/thermal-camera-input-00840.jpg"
+        },
+        {
+          "index": 1064,
+          "seconds": 35.498305084745766,
+          "derived_preview": "media/private-review/thermal-camera-input-01064.jpg"
+        }
+      ],
+      "interpretation": "container/decode metadata, not sensor specification",
+      "publication_status": "local_only: personal workspace/bystander screen recording; not approved for public release in this audit"
+    },
+    {
+      "name": "boson_test.mp4",
+      "source_sha256": "49e92ae880051372d5a1f4bb2b106a448d94eafbd645d94e38b746cbb8b73c4c",
+      "bytes": 1878269,
+      "decoded_frame_count": 90,
+      "fps": 9.0,
+      "duration_seconds": 10.0,
+      "width": 320,
+      "height": 256,
+      "codec_fourcc": "FMP4",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "seconds": 0.0,
+          "derived_preview": "docs/evidence/video-previews/boson-test-00000.jpg"
+        },
+        {
+          "index": 22,
+          "seconds": 2.4444444444444446,
+          "derived_preview": "docs/evidence/video-previews/boson-test-00022.jpg"
+        },
+        {
+          "index": 45,
+          "seconds": 5.0,
+          "derived_preview": "docs/evidence/video-previews/boson-test-00045.jpg"
+        },
+        {
+          "index": 67,
+          "seconds": 7.444444444444445,
+          "derived_preview": "docs/evidence/video-previews/boson-test-00067.jpg"
+        },
+        {
+          "index": 85,
+          "seconds": 9.444444444444445,
+          "derived_preview": "docs/evidence/video-previews/boson-test-00085.jpg"
+        }
+      ],
+      "interpretation": "container/decode metadata, not sensor specification"
+    },
+    {
+      "name": "distance_preview.mp4",
+      "source_sha256": "dda6bf3e769c5cdba93d2c773317070a10de0f6e3a4405a522e955f89616cfcb",
+      "bytes": 8825000,
+      "decoded_frame_count": 120,
+      "fps": 10.0,
+      "duration_seconds": 12.0,
+      "width": 1280,
+      "height": 736,
+      "codec_fourcc": "h264",
+      "sampled_frames": [
+        {
+          "index": 0,
+          "seconds": 0.0,
+          "derived_preview": "docs/evidence/video-previews/distance-preview-00000.jpg"
+        },
+        {
+          "index": 30,
+          "seconds": 3.0,
+          "derived_preview": "docs/evidence/video-previews/distance-preview-00030.jpg"
+        },
+        {
+          "index": 60,
+          "seconds": 6.0,
+          "derived_preview": "docs/evidence/video-previews/distance-preview-00060.jpg"
+        },
+        {
+          "index": 90,
+          "seconds": 9.0,
+          "derived_preview": "docs/evidence/video-previews/distance-preview-00090.jpg"
+        },
+        {
+          "index": 114,
+          "seconds": 11.4,
+          "derived_preview": "docs/evidence/video-previews/distance-preview-00114.jpg"
+        }
+      ],
+      "interpretation": "container/decode metadata, not sensor specification"
+    }
+  ],
+  "distance_preview_duplicate_is_identical": true
+}

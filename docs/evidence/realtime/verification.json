@@ -1,0 +1,30 @@
+[
+  {
+    "file": "comparison_native_10fps.mp4",
+    "decoded_frames": 120,
+    "fps": 10.0,
+    "expected_frames": 120,
+    "sha256": "2e91aa06a03dfe7fd2fb2d1a794604d6de2fd107379b48ba8ce814e22789bac6"
+  },
+  {
+    "file": "cpu_30.mp4",
+    "decoded_frames": 5400,
+    "fps": 30.0,
+    "expected_frames": 5400,
+    "sha256": "6f4ad3cb1259a485c9b3720295c400cf979ba23e0875efa7854c2fd60d9b4e9a"
+  },
+  {
+    "file": "gpu_eager_30.mp4",
+    "decoded_frames": 5400,
+    "fps": 30.0,
+    "expected_frames": 5400,
+    "sha256": "bc451b003acdeb35dd71fc01319ae5392d0846ddd2265f4b02460c6c7814bb08"
+  },
+  {
+    "file": "gpu_graph_30.mp4",
+    "decoded_frames": 5401,
+    "fps": 30.0,
+    "expected_frames": 5401,
+    "sha256": "a26d61cb80fbb3774bf938a66790bd00a68259406880a44798f6e39d943ef525"
+  }
+]

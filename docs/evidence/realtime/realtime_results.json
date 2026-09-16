@@ -1,0 +1,552 @@
+{
+  "environment": {
+    "python": "3.11.15 (main, Jun 23 2026, 15:20:37) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.6",
+    "opencv": "5.0.0",
+    "ffmpeg": "7.1-essentials_build-www.gyan.dev",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "source_sha256": "3bb826c914c96572ad796664a3e1941dff09803523f63671229f615a546f3aa2",
+    "checkpoint_sha256": "0322caf70f588355aaaf59c2bf5872b21a4b7e9f679971a7a3bb1f69b56a01ba"
+  },
+  "cases": {
+    "cpu_30": {
+      "stability": {
+        "passed": false,
+        "checks": {
+          "qualified_duration": true,
+          "nonempty": true,
+          "mean_fps_at_least_99pct": true,
+          "all_10s_windows_at_least_98pct": true,
+          "processing_p99_within_frame_budget": false,
+          "processing_deadline_misses_at_most_1pct": false,
+          "capture_drops_at_most_1pct": true,
+          "host_frame_age_p99_within_2_frames": true,
+          "output_gap_p99_within_1_5_frames": true,
+          "max_output_gap_within_3_frames": true,
+          "no_runtime_error": true,
+          "source_stopped_cleanly": true
+        },
+        "target_fps": 30.0,
+        "minimum_duration_s": 180.0,
+        "elapsed_s": 180.00333929999033,
+        "processed": 5400,
+        "effective_fps": 29.99944346032635,
+        "frame_budget_ms": 33.333333333333336,
+        "processing_ms": {
+          "mean": 25.53151918528817,
+          "p50": 25.01160000974778,
+          "p95": 29.426334996242076,
+          "p99": 33.45196599955671,
+          "max": 45.12319999048486
+        },
+        "host_frame_age_ms": {
+          "mean": 26.173189314598588,
+          "p50": 25.610950004193,
+          "p95": 30.13576501107309,
+          "p99": 34.98767902085093,
+          "max": 47.37849999219179
+        },
+        "output_gap_ms": {
+          "mean": 33.32777991112578,
+          "p50": 33.28589999000542,
+          "p95": 37.488100002519786,
+          "p99": 40.25089999777265,
+          "max": 63.252099993405864
+        },
+        "deadline_miss_pct": 1.0555555555555556,
+        "drop_pct": 0.0,
+        "depth_valid_pct": 100.0,
+        "windows": [
+          {
+            "start_s": 0.0,
+            "frames": 299,
+            "fps": 29.9
+          },
+          {
+            "start_s": 10.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 20.0,
+            "frames": 301,
+            "fps": 30.1
+          },
+          {
+            "start_s": 30.0,
+            "frames": 299,
+            "fps": 29.9
+          },
+          {
+            "start_s": 40.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 50.0,
+            "frames": 301,
+            "fps": 30.1
+          },
+          {
+            "start_s": 60.0,
+            "frames": 299,
+            "fps": 29.9
+          },
+          {
+            "start_s": 70.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 80.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 90.0,
+            "frames": 301,
+            "fps": 30.1
+          },
+          {
+            "start_s": 100.0,
+            "frames": 299,
+            "fps": 29.9
+          },
+          {
+            "start_s": 110.0,
+            "frames": 301,
+            "fps": 30.1
+          },
+          {
+            "start_s": 120.0,
+            "frames": 299,
+            "fps": 29.9
+          },
+          {
+            "start_s": 130.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 140.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 150.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 160.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 170.0,
+            "frames": 301,
+            "fps": 30.1
+          }
+        ],
+        "latency_scope": "host capture read completion to output callback completion; excludes sensor exposure/driver buffer and physical display scanout"
+      },
+      "device_verified": false,
+      "source": {
+        "source_kind": "file",
+        "source_fps_reported": 10.0,
+        "requested_fps": 30.0,
+        "pacing_fps": 30.0,
+        "clock": "host_perf_counter",
+        "requested_width": 640,
+        "requested_height": 480,
+        "observed_width": 320,
+        "observed_height": 240,
+        "input_format": "auto",
+        "loop": true
+      },
+      "depth_provenance": "synthetic",
+      "width_config": {
+        "near_m": 1.0,
+        "far_m": 8.0,
+        "near_px": 5.0,
+        "far_px": 1.0,
+        "tau_s": 0.05,
+        "max_age_s": 0.1,
+        "jump_px": 0.75
+      }
+    },
+    "gpu_eager_30": {
+      "stability": {
+        "passed": true,
+        "checks": {
+          "qualified_duration": true,
+          "nonempty": true,
+          "mean_fps_at_least_99pct": true,
+          "all_10s_windows_at_least_98pct": true,
+          "processing_p99_within_frame_budget": true,
+          "processing_deadline_misses_at_most_1pct": true,
+          "capture_drops_at_most_1pct": true,
+          "host_frame_age_p99_within_2_frames": true,
+          "output_gap_p99_within_1_5_frames": true,
+          "max_output_gap_within_3_frames": true,
+          "no_runtime_error": true,
+          "source_stopped_cleanly": true
+        },
+        "target_fps": 30.0,
+        "minimum_duration_s": 180.0,
+        "elapsed_s": 180.00786350001,
+        "processed": 5400,
+        "effective_fps": 29.99868947391679,
+        "frame_budget_ms": 33.333333333333336,
+        "processing_ms": {
+          "mean": 8.695224111164592,
+          "p50": 8.473499998217449,
+          "p95": 10.457945002417546,
+          "p99": 11.318805008195348,
+          "max": 27.600500005064532
+        },
+        "host_frame_age_ms": {
+          "mean": 9.345069500133697,
+          "p50": 9.123099996941164,
+          "p95": 11.092645002645442,
+          "p99": 12.020905000681525,
+          "max": 28.419200010830536
+        },
+        "output_gap_ms": {
+          "mean": 33.32861757082207,
+          "p50": 33.30660000210628,
+          "p95": 35.55679999408312,
+          "p99": 36.43870001542382,
+          "max": 47.08240000763908
+        },
+        "deadline_miss_pct": 0.0,
+        "drop_pct": 0.0,
+        "depth_valid_pct": 100.0,
+        "windows": [
+          {
+            "start_s": 0.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 10.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 20.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 30.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 40.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 50.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 60.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 70.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 80.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 90.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 100.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 110.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 120.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 130.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 140.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 150.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 160.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 170.0,
+            "frames": 300,
+            "fps": 30.0
+          }
+        ],
+        "latency_scope": "host capture read completion to output callback completion; excludes sensor exposure/driver buffer and physical display scanout"
+      },
+      "device_verified": false,
+      "source": {
+        "source_kind": "file",
+        "source_fps_reported": 10.0,
+        "requested_fps": 30.0,
+        "pacing_fps": 30.0,
+        "clock": "host_perf_counter",
+        "requested_width": 640,
+        "requested_height": 480,
+        "observed_width": 320,
+        "observed_height": 240,
+        "input_format": "auto",
+        "loop": true
+      },
+      "depth_provenance": "synthetic",
+      "width_config": {
+        "near_m": 1.0,
+        "far_m": 8.0,
+        "near_px": 5.0,
+        "far_px": 1.0,
+        "tau_s": 0.05,
+        "max_age_s": 0.1,
+        "jump_px": 0.75
+      }
+    },
+    "gpu_graph_30": {
+      "stability": {
+        "passed": true,
+        "checks": {
+          "qualified_duration": true,
+          "nonempty": true,
+          "mean_fps_at_least_99pct": true,
+          "all_10s_windows_at_least_98pct": true,
+          "processing_p99_within_frame_budget": true,
+          "processing_deadline_misses_at_most_1pct": true,
+          "capture_drops_at_most_1pct": true,
+          "host_frame_age_p99_within_2_frames": true,
+          "output_gap_p99_within_1_5_frames": true,
+          "max_output_gap_within_3_frames": true,
+          "no_runtime_error": true,
+          "source_stopped_cleanly": true
+        },
+        "target_fps": 30.0,
+        "minimum_duration_s": 180.0,
+        "elapsed_s": 180.02066559999366,
+        "processed": 5401,
+        "effective_fps": 30.00211104652304,
+        "frame_budget_ms": 33.333333333333336,
+        "processing_ms": {
+          "mean": 8.501034586024034,
+          "p50": 8.360499981790781,
+          "p95": 10.04389999434352,
+          "p99": 10.980999999446794,
+          "max": 27.17260000645183
+        },
+        "host_frame_age_ms": {
+          "mean": 9.13911784853451,
+          "p50": 8.998899982543662,
+          "p95": 10.705699998652562,
+          "p99": 11.601300007896498,
+          "max": 27.8898999968078
+        },
+        "output_gap_ms": {
+          "mean": 33.32481777119468,
+          "p50": 33.325099997455254,
+          "p95": 35.17198500485392,
+          "p99": 36.11291800887557,
+          "max": 45.17130000749603
+        },
+        "deadline_miss_pct": 0.0,
+        "drop_pct": 0.0,
+        "depth_valid_pct": 100.0,
+        "windows": [
+          {
+            "start_s": 0.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 10.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 20.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 30.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 40.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 50.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 60.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 70.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 80.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 90.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 100.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 110.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 120.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 130.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 140.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 150.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 160.0,
+            "frames": 300,
+            "fps": 30.0
+          },
+          {
+            "start_s": 170.0,
+            "frames": 300,
+            "fps": 30.0
+          }
+        ],
+        "latency_scope": "host capture read completion to output callback completion; excludes sensor exposure/driver buffer and physical display scanout"
+      },
+      "device_verified": false,
+      "source": {
+        "source_kind": "file",
+        "source_fps_reported": 10.0,
+        "requested_fps": 30.0,
+        "pacing_fps": 30.0,
+        "clock": "host_perf_counter",
+        "requested_width": 640,
+        "requested_height": 480,
+        "observed_width": 320,
+        "observed_height": 240,
+        "input_format": "auto",
+        "loop": true
+      },
+      "depth_provenance": "synthetic",
+      "width_config": {
+        "near_m": 1.0,
+        "far_m": 8.0,
+        "near_px": 5.0,
+        "far_px": 1.0,
+        "tau_s": 0.05,
+        "max_age_s": 0.1,
+        "jump_px": 0.75
+      }
+    }
+  },
+  "quality": {
+    "frames": 120,
+    "source_fps": 10.0,
+    "max_abs_probability_difference": 4.76837158203125e-07,
+    "mask_disagreement_pixels": 0,
+    "pixels_compared": 9216000,
+    "mask_disagreement_pct": 0.0,
+    "edge_iou": 1.0,
+    "compared": "same-device CUDA eager FP32 vs CUDA Graph FP32; all source frames"
+  },
+  "hardware_status": {
+    "target": "Jetson Orin Nano",
+    "depth_sensor": "undecided",
+    "physical_devices_tested": false
+  },
+  "tests": {
+    "teed_cuda": {
+      "run": 126,
+      "skipped": 0,
+      "failed": 0
+    },
+    "teed_cpu": {
+      "run": 126,
+      "skipped": 1,
+      "failed": 0
+    },
+    "orin": {
+      "run": 31,
+      "skipped": 0,
+      "failed": 0
+    }
+  },
+  "measurement_notes": [
+    "Original120frames10fps public video retimed30fps and looped.",
+    "Synthetic registered depth via real loopback TCP.",
+    "FP32, 320x240, 2 threads, 30warmup calls.",
+    "VideoWriter.write included; show disabled; final encoder/disk flush and physical display scanout excluded.",
+    "CPU run uses the same CUDA-wheel environment as GPU cases; older CPU report used a different environment/runtime."
+  ]
+}

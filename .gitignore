@@ -1,0 +1,8 @@
+media/
+local/
+source-map.json
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*

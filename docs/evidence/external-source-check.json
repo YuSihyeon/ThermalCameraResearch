@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-16",
+  "record": "https://zenodo.org/records/15173055",
+  "title": "SmokeBasement - Stereo thermal camera and Hesai lidar dataset",
+  "doi": "10.5281/zenodo.15173055",
+  "publication_date": "2025-04-08",
+  "creators": [
+    {
+      "name": "Huai, Jianzhu",
+      "affiliation": "Wuhan University",
+      "orcid": "0000-0003-0950-3889"
+    }
+  ],
+  "contributors": null,
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "note": "Metadata only. Full 27GB dataset was not downloaded for this archive."
+}

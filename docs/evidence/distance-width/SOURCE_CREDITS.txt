@@ -1,0 +1,1 @@
+Jianzhu Huai, SmokeBasement, Zenodo (2025), DOI: https://doi.org/10.5281/zenodo.15173055, CC BY 4.0. 데이터 readme는 Dezhong Chen의 수집 기여도 기록한다. 기존 run5 열화상 원본을 320×240·10fps로 재표본화한 로컬 클립에 TEED와 합성 거리 굵기를 적용했다. 원저자의 보증을 의미하지 않는다.

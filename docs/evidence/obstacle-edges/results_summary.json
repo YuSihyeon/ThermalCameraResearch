@@ -1,0 +1,367 @@
+{
+  "date": "2026-09-06",
+  "branch": "YSH",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.0+cpu",
+    "opencv": "5.0.0",
+    "device": "cpu",
+    "threads": 4,
+    "processor": "Intel64 Family 6 Model 189 Stepping 1, GenuineIntel"
+  },
+  "parameters": {
+    "teed": 58910,
+    "pidinet": 710149
+  },
+  "checkpoint_sha256": {
+    "teed": "0322caf70f588355aaaf59c2bf5872b21a4b7e9f679971a7a3bb1f69b56a01ba",
+    "pidinet": "80860ac267258b5f27486e0ef152a211d0b08120f62aeb185a050acc30da486c"
+  },
+  "pidinet_revision": "d21aa881ed9c628571636fad39acfe1fad517ebd",
+  "smoke_source_doi": "10.5281/zenodo.15173055",
+  "smoke_windows": {
+    "train": {
+      "run": 3,
+      "fps": 1.3333333333333333,
+      "duration_s": 24.0,
+      "max_resampling_error_ms": 39.40248489379883,
+      "unique_source_frames": 32
+    },
+    "test": {
+      "run": 5,
+      "fps": 10.0,
+      "duration_s": 12.0,
+      "max_resampling_error_ms": 40.81988334655762,
+      "unique_source_frames": 120
+    }
+  },
+  "smoke_training": {
+    "seed": 20260906,
+    "train_video": "SmokeBasement run3 timestamped 24-second window",
+    "train_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "steps": 256,
+    "epochs": [
+      0.7553628142923117,
+      0.7551528215408325,
+      0.7551219947636127,
+      0.7551056612282991,
+      0.755091579630971,
+      0.7550771962851286,
+      0.7550683300942183,
+      0.7550527974963188
+    ],
+    "lr": 0.0001,
+    "initial_loss": 0.7557139992713928,
+    "final_loss": 0.7550459504127502,
+    "loss": "weighted soft binary cross entropy to multiscale pseudo targets",
+    "changed_tensors": [
+      "block_cat.DWconv1.weight",
+      "block_cat.DWconv1.bias",
+      "block_cat.DWconv2.weight",
+      "block_cat.DWconv2.bias"
+    ],
+    "trainable_parameters": 480,
+    "checkpoint_sha256": "c247138cc65c3a3130fb5237aaa05b08b888879d88109541d7b9b83ff7123a97",
+    "seconds": 22.77715460001491,
+    "caveat": "No human obstacle labels; loss reduction is not evidence of obstacle recall."
+  },
+  "smoke_results": {
+    "baseline": {
+      "edge_occupancy_percent": 12.265266927083333,
+      "timing_samples": 110,
+      "cpu_pipeline_ms_median": 68.23109998367727,
+      "cpu_pipeline_ms_p95": 89.36767486156896,
+      "cpu_model_ms_median": 63.54190001729876,
+      "video": {
+        "frames": 120,
+        "fps": 10.0,
+        "bytes": 1558805,
+        "sha256": "f574d5035eaae82e476a8c1f2231d7d678d9c858e9576459cd98f2d3a6449358"
+      },
+      "motion_aligned_edge_disagreement": 0.29006236306157357,
+      "temporal_usable_pairs": 119,
+      "flow_valid_pixel_fraction": 0.992774531687675
+    },
+    "thin_only": {
+      "edge_occupancy_percent": 2.357541232638889,
+      "timing_samples": 110,
+      "cpu_pipeline_ms_median": 69.1487998701632,
+      "cpu_pipeline_ms_p95": 85.6107548926957,
+      "cpu_model_ms_median": 59.74144989158958,
+      "video": {
+        "frames": 120,
+        "fps": 10.0,
+        "bytes": 1642825,
+        "sha256": "c3637545387b8e246ceec4c40bb602b1207a1afda4887cb10dc7a64c95cb620f"
+      },
+      "motion_aligned_edge_disagreement": 0.6224607043371573,
+      "temporal_usable_pairs": 119,
+      "flow_valid_pixel_fraction": 0.992774531687675
+    },
+    "structural": {
+      "edge_occupancy_percent": 1.5076280381944445,
+      "timing_samples": 110,
+      "cpu_pipeline_ms_median": 73.54410004336387,
+      "cpu_pipeline_ms_p95": 104.54800494480878,
+      "cpu_model_ms_median": 62.30034993495792,
+      "video": {
+        "frames": 120,
+        "fps": 10.0,
+        "bytes": 1385684,
+        "sha256": "ffde2de42307d96a21d06b538296561ba9f6b520f5f8314711de3c092af61747"
+      },
+      "motion_aligned_edge_disagreement": 0.5722584306278373,
+      "temporal_usable_pairs": 119,
+      "flow_valid_pixel_fraction": 0.992774531687675
+    },
+    "adapted": {
+      "edge_occupancy_percent": 1.4458984375,
+      "timing_samples": 110,
+      "cpu_pipeline_ms_median": 69.48580010794103,
+      "cpu_pipeline_ms_p95": 93.68084992747754,
+      "cpu_model_ms_median": 60.4410000378266,
+      "video": {
+        "frames": 120,
+        "fps": 10.0,
+        "bytes": 1372362,
+        "sha256": "7584c98c972957c5e8893f25b3255f52326eada762aaa07c5f99419b119327a4"
+      },
+      "motion_aligned_edge_disagreement": 0.5653852512500064,
+      "temporal_usable_pairs": 119,
+      "flow_valid_pixel_fraction": 0.992774531687675
+    },
+    "pidinet": {
+      "edge_occupancy_percent": 1.943532986111111,
+      "timing_samples": 110,
+      "cpu_pipeline_ms_median": 443.92995012458414,
+      "cpu_pipeline_ms_p95": 556.8953999783844,
+      "cpu_model_ms_median": 417.89530008099973,
+      "video": {
+        "frames": 120,
+        "fps": 10.0,
+        "bytes": 1451952,
+        "sha256": "6aa1e348ffcc481f411650361b6786b547eed1f2a998926e93bb93eb8646cced"
+      },
+      "motion_aligned_edge_disagreement": 0.7361519186543254,
+      "temporal_usable_pairs": 119,
+      "flow_valid_pixel_fraction": 0.992774531687675
+    }
+  },
+  "ifsi_training": {
+    "seed": 20260906,
+    "train_video": "IFSI Video 8 (2).mp4",
+    "train_indices": [
+      119,
+      136,
+      153,
+      171,
+      188,
+      206,
+      223,
+      241,
+      258,
+      276,
+      293,
+      310,
+      328,
+      345,
+      363,
+      380,
+      398,
+      415,
+      433,
+      450,
+      468,
+      485,
+      502,
+      520,
+      537,
+      555,
+      572,
+      590,
+      607,
+      625,
+      642,
+      660
+    ],
+    "steps": 256,
+    "epochs": [
+      0.7270324770361185,
+      0.7251584064215422,
+      0.7242622785270214,
+      0.7237608823925257,
+      0.7234543412923813,
+      0.7232786510139704,
+      0.7231462802737951,
+      0.7230580225586891
+    ],
+    "lr": 0.0001,
+    "initial_loss": 0.7289018034934998,
+    "final_loss": 0.7230071425437927,
+    "loss": "weighted soft binary cross entropy to multiscale pseudo targets",
+    "changed_tensors": [
+      "block_cat.DWconv1.weight",
+      "block_cat.DWconv1.bias",
+      "block_cat.DWconv2.weight",
+      "block_cat.DWconv2.bias"
+    ],
+    "trainable_parameters": 480,
+    "checkpoint_sha256": "167dbbcc55d8f22b34353d55bd179400efcfe8b707f5d22b56a72be93fed408f",
+    "seconds": 36.01934750005603,
+    "caveat": "No human obstacle labels; loss reduction is not evidence of obstacle recall."
+  },
+  "ifsi_heldout_results": {
+    "baseline": {
+      "edge_occupancy_percent": 19.166660416666666,
+      "timing_samples": 615,
+      "cpu_pipeline_ms_median": 66.65470008738339,
+      "cpu_pipeline_ms_p95": 144.96665992774066,
+      "cpu_model_ms_median": 60.74679992161691,
+      "video": {
+        "frames": 625,
+        "fps": 29.97,
+        "bytes": 6375308,
+        "sha256": "0b54da34bf314b443e2d1c88b2ac86ca6549190fe21c4c793dda52b502aa37ef"
+      },
+      "motion_aligned_edge_disagreement": 0.2196126319277758,
+      "temporal_usable_pairs": 624,
+      "flow_valid_pixel_fraction": 0.9674380675747863
+    },
+    "thin_only": {
+      "edge_occupancy_percent": 3.61668125,
+      "timing_samples": 615,
+      "cpu_pipeline_ms_median": 69.3003002088517,
+      "cpu_pipeline_ms_p95": 142.7724500885232,
+      "cpu_model_ms_median": 58.62369993701577,
+      "video": {
+        "frames": 625,
+        "fps": 29.97,
+        "bytes": 5859264,
+        "sha256": "e7fbb41417dec900536333344402a89162da070bff1fbcab70520f8c072b282c"
+      },
+      "motion_aligned_edge_disagreement": 0.47812891831592735,
+      "temporal_usable_pairs": 624,
+      "flow_valid_pixel_fraction": 0.9674380675747863
+    },
+    "structural": {
+      "edge_occupancy_percent": 3.0682479166666665,
+      "timing_samples": 615,
+      "cpu_pipeline_ms_median": 70.20519999787211,
+      "cpu_pipeline_ms_p95": 155.77464003581548,
+      "cpu_model_ms_median": 58.70250007137656,
+      "video": {
+        "frames": 625,
+        "fps": 29.97,
+        "bytes": 4864635,
+        "sha256": "8ae150e2cdfba7f6c7d807ce2307e79d53a6d8c808475a99cd5d9f3bb0266293"
+      },
+      "motion_aligned_edge_disagreement": 0.44192946579074716,
+      "temporal_usable_pairs": 624,
+      "flow_valid_pixel_fraction": 0.9674380675747863
+    },
+    "adapted": {
+      "edge_occupancy_percent": 2.8672437499999996,
+      "timing_samples": 615,
+      "cpu_pipeline_ms_median": 70.0433999300003,
+      "cpu_pipeline_ms_p95": 151.1464101495221,
+      "cpu_model_ms_median": 58.9268000330776,
+      "video": {
+        "frames": 625,
+        "fps": 29.97,
+        "bytes": 4669344,
+        "sha256": "f466f89ef2f1683e395cbc14a4edf74bfbca917d3f136a0ee838477bcbb40732"
+      },
+      "motion_aligned_edge_disagreement": 0.42901535241440286,
+      "temporal_usable_pairs": 624,
+      "flow_valid_pixel_fraction": 0.9674380675747863
+    },
+    "pidinet": {
+      "edge_occupancy_percent": 2.7395270833333334,
+      "timing_samples": 615,
+      "cpu_pipeline_ms_median": 414.09759991802275,
+      "cpu_pipeline_ms_p95": 858.8458000915124,
+      "cpu_model_ms_median": 394.4974998012185,
+      "video": {
+        "frames": 625,
+        "fps": 29.97,
+        "bytes": 4650287,
+        "sha256": "3b8a6a772c140dc47e092219a6690fadeabd33668b37f7f078a5b3bba15afd3d"
+      },
+      "motion_aligned_edge_disagreement": 0.5702834730006454,
+      "temporal_usable_pairs": 592,
+      "flow_valid_pixel_fraction": 0.9674380675747863
+    }
+  },
+  "conversion_benchmark": {
+    "threads": 4,
+    "device": "cpu",
+    "input_size": [
+      320,
+      240
+    ],
+    "source_frames": [
+      0,
+      150,
+      450
+    ],
+    "conversion_max_abs_errors": [
+      9.08970832824707e-07,
+      1.6391277313232422e-06,
+      3.0994415283203125e-06
+    ],
+    "results": {
+      "teed": {
+        "median_ms": 60.559499892406166,
+        "p95_ms": 76.0324249858968,
+        "warm_samples": 36,
+        "parameters": 58910
+      },
+      "pidinet_original": {
+        "median_ms": 394.24520009197295,
+        "p95_ms": 602.38719987683,
+        "warm_samples": 36,
+        "parameters": 710149
+      },
+      "pidinet_converted": {
+        "median_ms": 383.94389988388866,
+        "p95_ms": 449.36450000386685,
+        "warm_samples": 36,
+        "parameters": 720709
+      }
+    },
+    "scope": "Forward only, prebuilt tensors; videos used original PiDiNet implementation. Not Jetson/TensorRT."
+  }
+}

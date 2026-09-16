@@ -1,0 +1,65 @@
+{
+  "review_date": "2026-09-16",
+  "videos": [
+    {
+      "file": "media/boson-test.mp4",
+      "source_type": "user-provided already-composited HUD",
+      "sha256": "49e92ae880051372d5a1f4bb2b106a448d94eafbd645d94e38b746cbb8b73c4c",
+      "review_extent": "5 representative frames plus full sequential decode, not all-frame manual privacy screening",
+      "finding": "Selected frames contain indoor grayscale background and green strokes; no identifiable faces, credentials, or contact information observed.",
+      "publication_candidate": true,
+      "attribution_required": false
+    },
+    {
+      "file": "media/distance-preview.mp4",
+      "source_type": "CC BY 4.0 SmokeBasement derivative",
+      "sha256": "dda6bf3e769c5cdba93d2c773317070a10de0f6e3a4405a522e955f89616cfcb",
+      "review_extent": "5 representative frames plus full sequential decode, not all-frame manual privacy screening",
+      "finding": "Attribution and assumed-distance disclaimer are visible; no identifying faces or credentials observed in selected frames.",
+      "publication_candidate": true,
+      "attribution_required": true
+    },
+    {
+      "file": "media/smoke-original.mp4",
+      "source_type": "CC BY 4.0 SmokeBasement derivative",
+      "sha256": "3bb826c914c96572ad796664a3e1941dff09803523f63671229f615a546f3aa2",
+      "review_extent": "5 representative frames plus full sequential decode, not all-frame manual privacy screening",
+      "finding": "One thermal human silhouette visible; no identifiable face in inspected frames.",
+      "publication_candidate": true,
+      "attribution_required": true
+    },
+    {
+      "file": "media/smoke-structural.mp4",
+      "source_type": "CC BY 4.0 SmokeBasement derivative",
+      "sha256": "ffde2de42307d96a21d06b538296561ba9f6b520f5f8314711de3c092af61747",
+      "review_extent": "5 representative frames plus full sequential decode, not all-frame manual privacy screening",
+      "finding": "Thermal human silhouette possible; no identifiable face in inspected frames.",
+      "publication_candidate": true,
+      "attribution_required": true
+    },
+    {
+      "file": "media/smoke-balanced-2px.mp4",
+      "source_type": "CC BY 4.0 SmokeBasement derivative",
+      "sha256": "5579bf350a3c76a73c6f68ff6da02173c32cb7d442a507aafa3e9ed4bee39d87",
+      "review_extent": "5 representative frames plus full sequential decode, not all-frame manual privacy screening",
+      "finding": "No identifiable faces or credentials observed in selected frames.",
+      "publication_candidate": true,
+      "attribution_required": true
+    },
+    {
+      "file": "media/realtime-comparison.mp4",
+      "source_type": "CC BY 4.0 SmokeBasement derivative",
+      "sha256": "2e91aa06a03dfe7fd2fb2d1a794604d6de2fd107379b48ba8ce814e22789bac6",
+      "review_extent": "5 representative frames plus full sequential decode, not all-frame manual privacy screening",
+      "finding": "Public thermal source includes unidentifiable human silhouette; synthetic-depth condition remains visible.",
+      "publication_candidate": true,
+      "attribution_required": true
+    },
+    {
+      "file": "media/camera-input.mp4",
+      "source_type": "phone recording of local desk/device/display",
+      "publication_candidate": false,
+      "finding": "Bystander back of head and workstation content visible. Keep local only; no public original or preview."
+    }
+  ]
+}

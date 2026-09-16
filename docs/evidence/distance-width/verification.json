@@ -1,0 +1,86 @@
+{
+  "videos": [
+    {
+      "file": "runtime_replay.mp4",
+      "frames": 120,
+      "fps": 10.0,
+      "size": [
+        320,
+        240
+      ],
+      "sha256": "8ae613b68f748f0fecda93a3a78507ad83eaa32f9eac468fd1c7a00e65716f78"
+    },
+    {
+      "file": "synthetic_comparison.mp4",
+      "frames": 300,
+      "fps": 30.0,
+      "size": [
+        1920,
+        1076
+      ],
+      "sha256": "4239366f5dbd25c8f24c549a953b14195fdd57fbb6e28068df17f041a578fe8f"
+    },
+    {
+      "file": "synthetic_smooth.mp4",
+      "frames": 300,
+      "fps": 30.0,
+      "size": [
+        640,
+        538
+      ],
+      "sha256": "691556430db3f7b332f425cbfa62920b04d95d9677f1a0be468f628617092d73"
+    },
+    {
+      "file": "thermal_assumed_comparison.mp4",
+      "frames": 120,
+      "fps": 10.0,
+      "size": [
+        1920,
+        1076
+      ],
+      "sha256": "8b1abea539844922fc3d3eda28493b57e30fa073a4dbdb8aab500370668804a4"
+    },
+    {
+      "file": "thermal_assumed_smooth.mp4",
+      "frames": 120,
+      "fps": 10.0,
+      "size": [
+        640,
+        538
+      ],
+      "sha256": "9782a52c46079a6d578ece95def937fd5e9efaab563e10431cf0c3ae330dd0ce"
+    }
+  ],
+  "html_assets": [
+    "thermal_assumed_frame_0060.png",
+    "thermal_assumed_comparison.mp4",
+    "synthetic_frame_0000.png",
+    "synthetic_comparison.mp4",
+    "REPORT.md",
+    "comparison.csv",
+    "summary.json",
+    "frame_metrics.csv",
+    "thermal_assumed_smooth.mp4"
+  ],
+  "tests": {
+    "tests_teed.txt": 55,
+    "tests_orin.txt": 31
+  },
+  "python36_grammar_files": [
+    "edge\\teed\\depth_replay.py",
+    "edge\\teed\\distance_width.py",
+    "edge\\teed\\run_teed.py",
+    "edge\\teed\\teed_model.py"
+  ],
+  "runtime_compatibility_note": "Grammar check only; tests run on Python 3.13 CPU, not JetPack Python 3.6.",
+  "source_files_sha256": {
+    "edge\\teed\\depth_replay.py": "aa3372cf381284e05569cc6e8f9252b2786a9fb2433e0adeeb99a2ee9d8b2a9f",
+    "edge\\teed\\distance_width.py": "e367687288cf3deaade0811d9d6592597bce051a4813e30bfb40a672d0479067",
+    "edge\\teed\\run_teed.py": "5b9dc46733fd50dfd270adcdcae7df38c665d47f27ab7c57130aa25b23f15900",
+    "edge\\teed\\teed_model.py": "ba27ed32efcb6fd3a1229941c7b500bf98e630500860bf911bd0c6b137900ccd",
+    "experiments\\distance_width\\benchmark.py": "d5b3703dbe77e303151aebce23a476a6c71aa553f8b845af8e85d1f412a55991",
+    "experiments\\distance_width\\build_report.py": "62ac122e3ae8f883769061b8d6edec9d5995caff3ae93d4acc3f09b46c5f00cd",
+    "experiments\\distance_width\\verify_outputs.py": "528cb05810b212af9c48b8fd19d10d5c366d040da23a35fefb767fe568724087"
+  },
+  "git_head": "8ef33a15d3c473c35052e4b8b6a8a5ec1a83d782"
+}

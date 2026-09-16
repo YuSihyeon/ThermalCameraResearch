@@ -1,0 +1,44 @@
+import cv2
+import numpy as np
+
+img = cv2.imread("frame_0.png", cv2.IMREAD_GRAYSCALE)
+
+if img is None:
+    print("image not found")
+    exit()
+
+stride = 4
+z_scale = 3000.0
+
+img = img.astype(np.float32) / 255.0
+
+h, w = img.shape
+
+points = []
+
+for y in range(0, h, stride):
+    for x in range(0, w, stride):
+
+        z = img[y, x] * z_scale
+
+        points.append([x, y, z])
+
+points = np.array(points)
+
+print("point count:", len(points))
+
+# PLY 파일 저장
+with open("thermal_pointcloud.ply", "w") as f:
+
+    f.write("ply\n")
+    f.write("format ascii 1.0\n")
+    f.write(f"element vertex {len(points)}\n")
+    f.write("property float x\n")
+    f.write("property float y\n")
+    f.write("property float z\n")
+    f.write("end_header\n")
+
+    for p in points:
+        f.write(f"{p[0]} {p[1]} {p[2]}\n")
+
+print("Saved: thermal_pointcloud.ply")

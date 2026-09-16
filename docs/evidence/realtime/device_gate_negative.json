@@ -1,0 +1,14 @@
+{
+  "command": [
+    "[local path retained in source-map.json]",
+    "edge/orin/run_distance.py",
+    "--source",
+    "0",
+    "--calibration",
+    "not_a_real_calibration.json",
+    "--verify-device"
+  ],
+  "returncode": 2,
+  "stderr": "error: device validation requires a connected Jetson Orin Nano host\n",
+  "expected": "PC cannot pass physical Orin Nano validation"
+}

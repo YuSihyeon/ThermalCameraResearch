@@ -1,0 +1,93 @@
+[
+  {
+    "file": "media/boson-test.mp4",
+    "reported_frames": 90,
+    "fully_decoded_frames": 90,
+    "fps": 9.0,
+    "shapes": [
+      [
+        320,
+        256
+      ]
+    ],
+    "frame_count_matches": true
+  },
+  {
+    "file": "media/camera-input.mp4",
+    "reported_frames": 1121,
+    "fully_decoded_frames": 1121,
+    "fps": 29.97326203208556,
+    "shapes": [
+      [
+        1080,
+        1920
+      ]
+    ],
+    "frame_count_matches": true
+  },
+  {
+    "file": "media/distance-preview.mp4",
+    "reported_frames": 120,
+    "fully_decoded_frames": 120,
+    "fps": 10.0,
+    "shapes": [
+      [
+        1280,
+        736
+      ]
+    ],
+    "frame_count_matches": true
+  },
+  {
+    "file": "media/realtime-comparison.mp4",
+    "reported_frames": 120,
+    "fully_decoded_frames": 120,
+    "fps": 10.0,
+    "shapes": [
+      [
+        640,
+        556
+      ]
+    ],
+    "frame_count_matches": true
+  },
+  {
+    "file": "media/smoke-balanced-2px.mp4",
+    "reported_frames": 120,
+    "fully_decoded_frames": 120,
+    "fps": 10.0,
+    "shapes": [
+      [
+        640,
+        480
+      ]
+    ],
+    "frame_count_matches": true
+  },
+  {
+    "file": "media/smoke-original.mp4",
+    "reported_frames": 120,
+    "fully_decoded_frames": 120,
+    "fps": 10.0,
+    "shapes": [
+      [
+        320,
+        240
+      ]
+    ],
+    "frame_count_matches": true
+  },
+  {
+    "file": "media/smoke-structural.mp4",
+    "reported_frames": 120,
+    "fully_decoded_frames": 120,
+    "fps": 10.0,
+    "shapes": [
+      [
+        320,
+        240
+      ]
+    ],
+    "frame_count_matches": true
+  }
+]

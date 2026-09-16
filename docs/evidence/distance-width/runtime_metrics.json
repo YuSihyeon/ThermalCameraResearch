@@ -1,0 +1,56 @@
+{
+  "checkpoint": "[local path retained in source-map.json]",
+  "contrast_clip_limit": 2.0,
+  "cpu_threads": 2,
+  "cuda_available": false,
+  "device": "cpu",
+  "distance_width": {
+    "depth_read_ms_p95": 0.031400006264448166,
+    "depth_replay": "[local path retained in source-map.json]",
+    "depth_units": "meters; externally aligned, not estimated by TEED",
+    "far_m": 8.0,
+    "far_px": 1.0,
+    "max_age_ms": 100.0,
+    "near_m": 1.0,
+    "near_px": 5.0,
+    "render_ms": {
+      "p50": 2.749000006588176,
+      "p95": 5.344700010027736,
+      "p99": 5.869799992069602
+    },
+    "status_counts": {
+      "ok": 120
+    },
+    "tau_ms": 50.0
+  },
+  "effective_fps": 27.82532301026644,
+  "ignored_region_count": 0,
+  "latency_scope": "preprocess + synchronized model + CPU transfer + render; excludes capture, display and encode",
+  "model_latency_ms": {
+    "max": 57.338700018590316,
+    "mean": 29.294295001454884,
+    "p50": 28.450799989514053,
+    "p95": 42.829299985896796
+  },
+  "processed_frames": 120,
+  "profile_path": null,
+  "protocol": "teed_jetson_nano_runtime_v1",
+  "replay_fps": 10.0,
+  "resolution": [
+    320,
+    240
+  ],
+  "source": "experiments/obstacle_edges/deliverables/media/smoke_heldout_original.mp4",
+  "source_kind": "video",
+  "threshold": 0.75,
+  "torch_version": "2.14.0+cpu",
+  "total_latency_ms": {
+    "max": 63.69270000141114,
+    "mean": 35.12743333194521,
+    "p50": 34.56000000005588,
+    "p95": 49.59800001233816,
+    "p99": 61.81590000051074
+  },
+  "video_key": "smoke_heldout_original.mp4",
+  "width_mode": "distance"
+}

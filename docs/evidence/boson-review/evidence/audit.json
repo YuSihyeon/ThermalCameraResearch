@@ -1,0 +1,821 @@
+{
+  "protocol": "boson_composited_hud_audit_v1",
+  "source": {
+    "filename": "boson_test.mp4",
+    "sha256": "49e92ae880051372d5a1f4bb2b106a448d94eafbd645d94e38b746cbb8b73c4c",
+    "size": [
+      320,
+      256
+    ],
+    "fps": 9.0,
+    "decoded_frames": 90,
+    "duration_seconds": 10.0,
+    "interpretation": "already composited HUD; no raw thermal/probability map"
+  },
+  "git_base": "62614440f1ed561251a8551ce0a97cfcc854c090",
+  "code_sha256": {
+    "experiments\\boson_review\\analyze.py": "509d5367b7eaa7f141cde32b2dd01ceaea7937d1e0d08b18186039da589ffff5",
+    "edge\\orin\\hud.py": "bea1bdf30221339a35e2d8bf805830c4267038c1c04d2f5a80977ff8aeb3ed60",
+    "edge\\orin\\replay.py": "6d49689fdb489e35e7a89cc79d690083dc98d0a6e346158d63cada4f74904939",
+    "experiments\\obstacle_edges\\contours.py": "6637f92a7b24d93ddd88d484f54ecc07aea5c665eaf60911855dae57cadab037"
+  },
+  "versions": {
+    "opencv": "4.13.0",
+    "numpy": "2.5.3",
+    "imageio_ffmpeg": "0.6.0",
+    "python": "3.13.10 (tags/v3.13.10:4fd8843, Dec  2 2025, 15:08:18) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "mean_display_coverage_percent": {
+    "green_pixels": 18.45798068576389,
+    "thin_pixels": 4.038872612847222,
+    "green_pixels_strict": 17.015150282118054,
+    "green_pixels_loose": 18.71515570746528
+  },
+  "rgb_existing_rule_synthetic_cases": [
+    {
+      "case": "Brown-like flat patch",
+      "bgr": [
+        70,
+        120,
+        180
+      ],
+      "red_pixels": 1004
+    },
+    {
+      "case": "Orange flat patch",
+      "bgr": [
+        0,
+        140,
+        255
+      ],
+      "red_pixels": 1004
+    },
+    {
+      "case": "Gray flat patch",
+      "bgr": [
+        180,
+        180,
+        180
+      ],
+      "red_pixels": 0
+    }
+  ],
+  "gray8_request_three_channel_result": "bgr8",
+  "limitations": [
+    "No obstacle accuracy or fire sensitivity/specificity evaluation",
+    "Thinning an encoded overlay cannot undo merged/lost edges",
+    "Background under coloured strokes cannot be recovered",
+    "No new TEED inference, Jetson performance or temperature measurement"
+  ],
+  "videos": {
+    "extracted_green_only": {
+      "frames_decoded": 90,
+      "fps": 9.0,
+      "size": [
+        320,
+        256
+      ],
+      "sha256": "d0935a992f1f942c4e253a3018a3b131375d90acee135af406bc85df5cb76af4"
+    },
+    "thin_green_only": {
+      "frames_decoded": 90,
+      "fps": 9.0,
+      "size": [
+        320,
+        256
+      ],
+      "sha256": "3fd8f6ff7140968a336d6a27bbbf6896a326f9c4c83988da330562b4ec32f2c4"
+    },
+    "comparison": {
+      "frames_decoded": 90,
+      "fps": 9.0,
+      "size": [
+        1280,
+        554
+      ],
+      "sha256": "6918401447d86d548fd97d49438e9cb7485ba873ba2a81d0fe019f912c8d0696"
+    }
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "seconds": 0.0,
+      "green_pixels": 14661,
+      "thin_pixels": 3214,
+      "green_pixels_strict": 13468,
+      "green_pixels_loose": 14761
+    },
+    {
+      "frame": 1,
+      "seconds": 0.1111111111111111,
+      "green_pixels": 14779,
+      "thin_pixels": 3143,
+      "green_pixels_strict": 13501,
+      "green_pixels_loose": 14852
+    },
+    {
+      "frame": 2,
+      "seconds": 0.2222222222222222,
+      "green_pixels": 14769,
+      "thin_pixels": 3186,
+      "green_pixels_strict": 13585,
+      "green_pixels_loose": 14862
+    },
+    {
+      "frame": 3,
+      "seconds": 0.3333333333333333,
+      "green_pixels": 14538,
+      "thin_pixels": 3209,
+      "green_pixels_strict": 13369,
+      "green_pixels_loose": 14645
+    },
+    {
+      "frame": 4,
+      "seconds": 0.4444444444444444,
+      "green_pixels": 14657,
+      "thin_pixels": 3159,
+      "green_pixels_strict": 13450,
+      "green_pixels_loose": 14778
+    },
+    {
+      "frame": 5,
+      "seconds": 0.5555555555555556,
+      "green_pixels": 15113,
+      "thin_pixels": 3273,
+      "green_pixels_strict": 13907,
+      "green_pixels_loose": 15235
+    },
+    {
+      "frame": 6,
+      "seconds": 0.6666666666666666,
+      "green_pixels": 15128,
+      "thin_pixels": 3310,
+      "green_pixels_strict": 13945,
+      "green_pixels_loose": 15231
+    },
+    {
+      "frame": 7,
+      "seconds": 0.7777777777777778,
+      "green_pixels": 15066,
+      "thin_pixels": 3310,
+      "green_pixels_strict": 13860,
+      "green_pixels_loose": 15175
+    },
+    {
+      "frame": 8,
+      "seconds": 0.8888888888888888,
+      "green_pixels": 14897,
+      "thin_pixels": 3237,
+      "green_pixels_strict": 13709,
+      "green_pixels_loose": 15030
+    },
+    {
+      "frame": 9,
+      "seconds": 1.0,
+      "green_pixels": 14866,
+      "thin_pixels": 3244,
+      "green_pixels_strict": 13719,
+      "green_pixels_loose": 15012
+    },
+    {
+      "frame": 10,
+      "seconds": 1.1111111111111112,
+      "green_pixels": 14752,
+      "thin_pixels": 3269,
+      "green_pixels_strict": 13553,
+      "green_pixels_loose": 14892
+    },
+    {
+      "frame": 11,
+      "seconds": 1.2222222222222223,
+      "green_pixels": 14930,
+      "thin_pixels": 3295,
+      "green_pixels_strict": 13743,
+      "green_pixels_loose": 15055
+    },
+    {
+      "frame": 12,
+      "seconds": 1.3333333333333333,
+      "green_pixels": 14708,
+      "thin_pixels": 3203,
+      "green_pixels_strict": 13525,
+      "green_pixels_loose": 14716
+    },
+    {
+      "frame": 13,
+      "seconds": 1.4444444444444444,
+      "green_pixels": 14862,
+      "thin_pixels": 3291,
+      "green_pixels_strict": 13674,
+      "green_pixels_loose": 14978
+    },
+    {
+      "frame": 14,
+      "seconds": 1.5555555555555556,
+      "green_pixels": 14683,
+      "thin_pixels": 3198,
+      "green_pixels_strict": 13497,
+      "green_pixels_loose": 14809
+    },
+    {
+      "frame": 15,
+      "seconds": 1.6666666666666667,
+      "green_pixels": 14889,
+      "thin_pixels": 3275,
+      "green_pixels_strict": 13726,
+      "green_pixels_loose": 15004
+    },
+    {
+      "frame": 16,
+      "seconds": 1.7777777777777777,
+      "green_pixels": 14979,
+      "thin_pixels": 3285,
+      "green_pixels_strict": 13787,
+      "green_pixels_loose": 15132
+    },
+    {
+      "frame": 17,
+      "seconds": 1.8888888888888888,
+      "green_pixels": 14725,
+      "thin_pixels": 3263,
+      "green_pixels_strict": 13561,
+      "green_pixels_loose": 14870
+    },
+    {
+      "frame": 18,
+      "seconds": 2.0,
+      "green_pixels": 14676,
+      "thin_pixels": 3210,
+      "green_pixels_strict": 13477,
+      "green_pixels_loose": 14833
+    },
+    {
+      "frame": 19,
+      "seconds": 2.111111111111111,
+      "green_pixels": 14854,
+      "thin_pixels": 3278,
+      "green_pixels_strict": 13634,
+      "green_pixels_loose": 14961
+    },
+    {
+      "frame": 20,
+      "seconds": 2.2222222222222223,
+      "green_pixels": 14851,
+      "thin_pixels": 3257,
+      "green_pixels_strict": 13704,
+      "green_pixels_loose": 15119
+    },
+    {
+      "frame": 21,
+      "seconds": 2.3333333333333335,
+      "green_pixels": 14932,
+      "thin_pixels": 3230,
+      "green_pixels_strict": 13744,
+      "green_pixels_loose": 15167
+    },
+    {
+      "frame": 22,
+      "seconds": 2.4444444444444446,
+      "green_pixels": 14708,
+      "thin_pixels": 3143,
+      "green_pixels_strict": 13571,
+      "green_pixels_loose": 14962
+    },
+    {
+      "frame": 23,
+      "seconds": 2.5555555555555554,
+      "green_pixels": 14809,
+      "thin_pixels": 3216,
+      "green_pixels_strict": 13684,
+      "green_pixels_loose": 15112
+    },
+    {
+      "frame": 24,
+      "seconds": 2.6666666666666665,
+      "green_pixels": 14961,
+      "thin_pixels": 3274,
+      "green_pixels_strict": 13710,
+      "green_pixels_loose": 14975
+    },
+    {
+      "frame": 25,
+      "seconds": 2.7777777777777777,
+      "green_pixels": 14971,
+      "thin_pixels": 3259,
+      "green_pixels_strict": 13846,
+      "green_pixels_loose": 15214
+    },
+    {
+      "frame": 26,
+      "seconds": 2.888888888888889,
+      "green_pixels": 15038,
+      "thin_pixels": 3279,
+      "green_pixels_strict": 13936,
+      "green_pixels_loose": 15310
+    },
+    {
+      "frame": 27,
+      "seconds": 3.0,
+      "green_pixels": 14955,
+      "thin_pixels": 3287,
+      "green_pixels_strict": 13818,
+      "green_pixels_loose": 15288
+    },
+    {
+      "frame": 28,
+      "seconds": 3.111111111111111,
+      "green_pixels": 15134,
+      "thin_pixels": 3285,
+      "green_pixels_strict": 14076,
+      "green_pixels_loose": 15539
+    },
+    {
+      "frame": 29,
+      "seconds": 3.2222222222222223,
+      "green_pixels": 14792,
+      "thin_pixels": 3255,
+      "green_pixels_strict": 13721,
+      "green_pixels_loose": 15232
+    },
+    {
+      "frame": 30,
+      "seconds": 3.3333333333333335,
+      "green_pixels": 15010,
+      "thin_pixels": 3240,
+      "green_pixels_strict": 13888,
+      "green_pixels_loose": 15427
+    },
+    {
+      "frame": 31,
+      "seconds": 3.4444444444444446,
+      "green_pixels": 14999,
+      "thin_pixels": 3228,
+      "green_pixels_strict": 13940,
+      "green_pixels_loose": 15396
+    },
+    {
+      "frame": 32,
+      "seconds": 3.5555555555555554,
+      "green_pixels": 14822,
+      "thin_pixels": 3180,
+      "green_pixels_strict": 13679,
+      "green_pixels_loose": 15173
+    },
+    {
+      "frame": 33,
+      "seconds": 3.6666666666666665,
+      "green_pixels": 14823,
+      "thin_pixels": 3176,
+      "green_pixels_strict": 13677,
+      "green_pixels_loose": 15480
+    },
+    {
+      "frame": 34,
+      "seconds": 3.7777777777777777,
+      "green_pixels": 14676,
+      "thin_pixels": 3242,
+      "green_pixels_strict": 13610,
+      "green_pixels_loose": 15019
+    },
+    {
+      "frame": 35,
+      "seconds": 3.888888888888889,
+      "green_pixels": 14831,
+      "thin_pixels": 3229,
+      "green_pixels_strict": 13800,
+      "green_pixels_loose": 15441
+    },
+    {
+      "frame": 36,
+      "seconds": 4.0,
+      "green_pixels": 14942,
+      "thin_pixels": 3326,
+      "green_pixels_strict": 13784,
+      "green_pixels_loose": 15064
+    },
+    {
+      "frame": 37,
+      "seconds": 4.111111111111111,
+      "green_pixels": 14891,
+      "thin_pixels": 3293,
+      "green_pixels_strict": 13801,
+      "green_pixels_loose": 15206
+    },
+    {
+      "frame": 38,
+      "seconds": 4.222222222222222,
+      "green_pixels": 15249,
+      "thin_pixels": 3341,
+      "green_pixels_strict": 14113,
+      "green_pixels_loose": 15607
+    },
+    {
+      "frame": 39,
+      "seconds": 4.333333333333333,
+      "green_pixels": 15270,
+      "thin_pixels": 3324,
+      "green_pixels_strict": 14102,
+      "green_pixels_loose": 15623
+    },
+    {
+      "frame": 40,
+      "seconds": 4.444444444444445,
+      "green_pixels": 15140,
+      "thin_pixels": 3272,
+      "green_pixels_strict": 13997,
+      "green_pixels_loose": 15482
+    },
+    {
+      "frame": 41,
+      "seconds": 4.555555555555555,
+      "green_pixels": 15081,
+      "thin_pixels": 3243,
+      "green_pixels_strict": 13992,
+      "green_pixels_loose": 15462
+    },
+    {
+      "frame": 42,
+      "seconds": 4.666666666666667,
+      "green_pixels": 15294,
+      "thin_pixels": 3384,
+      "green_pixels_strict": 14113,
+      "green_pixels_loose": 15594
+    },
+    {
+      "frame": 43,
+      "seconds": 4.777777777777778,
+      "green_pixels": 15291,
+      "thin_pixels": 3304,
+      "green_pixels_strict": 14141,
+      "green_pixels_loose": 15558
+    },
+    {
+      "frame": 44,
+      "seconds": 4.888888888888889,
+      "green_pixels": 15214,
+      "thin_pixels": 3279,
+      "green_pixels_strict": 14060,
+      "green_pixels_loose": 15470
+    },
+    {
+      "frame": 45,
+      "seconds": 5.0,
+      "green_pixels": 14991,
+      "thin_pixels": 3224,
+      "green_pixels_strict": 13852,
+      "green_pixels_loose": 15329
+    },
+    {
+      "frame": 46,
+      "seconds": 5.111111111111111,
+      "green_pixels": 15474,
+      "thin_pixels": 3278,
+      "green_pixels_strict": 14261,
+      "green_pixels_loose": 15703
+    },
+    {
+      "frame": 47,
+      "seconds": 5.222222222222222,
+      "green_pixels": 15357,
+      "thin_pixels": 3333,
+      "green_pixels_strict": 14186,
+      "green_pixels_loose": 15735
+    },
+    {
+      "frame": 48,
+      "seconds": 5.333333333333333,
+      "green_pixels": 15456,
+      "thin_pixels": 3325,
+      "green_pixels_strict": 14195,
+      "green_pixels_loose": 15504
+    },
+    {
+      "frame": 49,
+      "seconds": 5.444444444444445,
+      "green_pixels": 15197,
+      "thin_pixels": 3260,
+      "green_pixels_strict": 14043,
+      "green_pixels_loose": 15551
+    },
+    {
+      "frame": 50,
+      "seconds": 5.555555555555555,
+      "green_pixels": 15134,
+      "thin_pixels": 3215,
+      "green_pixels_strict": 13966,
+      "green_pixels_loose": 15374
+    },
+    {
+      "frame": 51,
+      "seconds": 5.666666666666667,
+      "green_pixels": 15283,
+      "thin_pixels": 3340,
+      "green_pixels_strict": 14094,
+      "green_pixels_loose": 15541
+    },
+    {
+      "frame": 52,
+      "seconds": 5.777777777777778,
+      "green_pixels": 15291,
+      "thin_pixels": 3321,
+      "green_pixels_strict": 14087,
+      "green_pixels_loose": 15530
+    },
+    {
+      "frame": 53,
+      "seconds": 5.888888888888889,
+      "green_pixels": 15268,
+      "thin_pixels": 3307,
+      "green_pixels_strict": 14113,
+      "green_pixels_loose": 15556
+    },
+    {
+      "frame": 54,
+      "seconds": 6.0,
+      "green_pixels": 15265,
+      "thin_pixels": 3341,
+      "green_pixels_strict": 14077,
+      "green_pixels_loose": 15581
+    },
+    {
+      "frame": 55,
+      "seconds": 6.111111111111111,
+      "green_pixels": 15457,
+      "thin_pixels": 3380,
+      "green_pixels_strict": 14246,
+      "green_pixels_loose": 15609
+    },
+    {
+      "frame": 56,
+      "seconds": 6.222222222222222,
+      "green_pixels": 15558,
+      "thin_pixels": 3448,
+      "green_pixels_strict": 14327,
+      "green_pixels_loose": 15723
+    },
+    {
+      "frame": 57,
+      "seconds": 6.333333333333333,
+      "green_pixels": 15379,
+      "thin_pixels": 3387,
+      "green_pixels_strict": 14153,
+      "green_pixels_loose": 15662
+    },
+    {
+      "frame": 58,
+      "seconds": 6.444444444444445,
+      "green_pixels": 15402,
+      "thin_pixels": 3379,
+      "green_pixels_strict": 14206,
+      "green_pixels_loose": 15554
+    },
+    {
+      "frame": 59,
+      "seconds": 6.555555555555555,
+      "green_pixels": 15411,
+      "thin_pixels": 3376,
+      "green_pixels_strict": 14221,
+      "green_pixels_loose": 15558
+    },
+    {
+      "frame": 60,
+      "seconds": 6.666666666666667,
+      "green_pixels": 15419,
+      "thin_pixels": 3390,
+      "green_pixels_strict": 14222,
+      "green_pixels_loose": 15432
+    },
+    {
+      "frame": 61,
+      "seconds": 6.777777777777778,
+      "green_pixels": 15562,
+      "thin_pixels": 3431,
+      "green_pixels_strict": 14373,
+      "green_pixels_loose": 15663
+    },
+    {
+      "frame": 62,
+      "seconds": 6.888888888888889,
+      "green_pixels": 15407,
+      "thin_pixels": 3324,
+      "green_pixels_strict": 14228,
+      "green_pixels_loose": 15669
+    },
+    {
+      "frame": 63,
+      "seconds": 7.0,
+      "green_pixels": 15574,
+      "thin_pixels": 3390,
+      "green_pixels_strict": 14326,
+      "green_pixels_loose": 15722
+    },
+    {
+      "frame": 64,
+      "seconds": 7.111111111111111,
+      "green_pixels": 15353,
+      "thin_pixels": 3426,
+      "green_pixels_strict": 14132,
+      "green_pixels_loose": 15494
+    },
+    {
+      "frame": 65,
+      "seconds": 7.222222222222222,
+      "green_pixels": 15370,
+      "thin_pixels": 3397,
+      "green_pixels_strict": 14137,
+      "green_pixels_loose": 15502
+    },
+    {
+      "frame": 66,
+      "seconds": 7.333333333333333,
+      "green_pixels": 15262,
+      "thin_pixels": 3338,
+      "green_pixels_strict": 14086,
+      "green_pixels_loose": 15397
+    },
+    {
+      "frame": 67,
+      "seconds": 7.444444444444445,
+      "green_pixels": 15276,
+      "thin_pixels": 3440,
+      "green_pixels_strict": 14082,
+      "green_pixels_loose": 15421
+    },
+    {
+      "frame": 68,
+      "seconds": 7.555555555555555,
+      "green_pixels": 15370,
+      "thin_pixels": 3448,
+      "green_pixels_strict": 14132,
+      "green_pixels_loose": 15503
+    },
+    {
+      "frame": 69,
+      "seconds": 7.666666666666667,
+      "green_pixels": 15339,
+      "thin_pixels": 3399,
+      "green_pixels_strict": 14078,
+      "green_pixels_loose": 15484
+    },
+    {
+      "frame": 70,
+      "seconds": 7.777777777777778,
+      "green_pixels": 15435,
+      "thin_pixels": 3409,
+      "green_pixels_strict": 14201,
+      "green_pixels_loose": 15573
+    },
+    {
+      "frame": 71,
+      "seconds": 7.888888888888889,
+      "green_pixels": 15464,
+      "thin_pixels": 3481,
+      "green_pixels_strict": 14237,
+      "green_pixels_loose": 15597
+    },
+    {
+      "frame": 72,
+      "seconds": 8.0,
+      "green_pixels": 15456,
+      "thin_pixels": 3440,
+      "green_pixels_strict": 14144,
+      "green_pixels_loose": 15472
+    },
+    {
+      "frame": 73,
+      "seconds": 8.11111111111111,
+      "green_pixels": 15197,
+      "thin_pixels": 3313,
+      "green_pixels_strict": 13999,
+      "green_pixels_loose": 15428
+    },
+    {
+      "frame": 74,
+      "seconds": 8.222222222222221,
+      "green_pixels": 15302,
+      "thin_pixels": 3327,
+      "green_pixels_strict": 14137,
+      "green_pixels_loose": 15540
+    },
+    {
+      "frame": 75,
+      "seconds": 8.333333333333334,
+      "green_pixels": 15197,
+      "thin_pixels": 3332,
+      "green_pixels_strict": 14002,
+      "green_pixels_loose": 15449
+    },
+    {
+      "frame": 76,
+      "seconds": 8.444444444444445,
+      "green_pixels": 15435,
+      "thin_pixels": 3419,
+      "green_pixels_strict": 14186,
+      "green_pixels_loose": 15577
+    },
+    {
+      "frame": 77,
+      "seconds": 8.555555555555555,
+      "green_pixels": 15341,
+      "thin_pixels": 3381,
+      "green_pixels_strict": 14082,
+      "green_pixels_loose": 15485
+    },
+    {
+      "frame": 78,
+      "seconds": 8.666666666666666,
+      "green_pixels": 15244,
+      "thin_pixels": 3369,
+      "green_pixels_strict": 14046,
+      "green_pixels_loose": 15495
+    },
+    {
+      "frame": 79,
+      "seconds": 8.777777777777779,
+      "green_pixels": 15458,
+      "thin_pixels": 3422,
+      "green_pixels_strict": 14242,
+      "green_pixels_loose": 15634
+    },
+    {
+      "frame": 80,
+      "seconds": 8.88888888888889,
+      "green_pixels": 15448,
+      "thin_pixels": 3355,
+      "green_pixels_strict": 14254,
+      "green_pixels_loose": 15730
+    },
+    {
+      "frame": 81,
+      "seconds": 9.0,
+      "green_pixels": 15550,
+      "thin_pixels": 3435,
+      "green_pixels_strict": 14265,
+      "green_pixels_loose": 15714
+    },
+    {
+      "frame": 82,
+      "seconds": 9.11111111111111,
+      "green_pixels": 15213,
+      "thin_pixels": 3357,
+      "green_pixels_strict": 13955,
+      "green_pixels_loose": 15483
+    },
+    {
+      "frame": 83,
+      "seconds": 9.222222222222221,
+      "green_pixels": 15177,
+      "thin_pixels": 3380,
+      "green_pixels_strict": 13973,
+      "green_pixels_loose": 15311
+    },
+    {
+      "frame": 84,
+      "seconds": 9.333333333333334,
+      "green_pixels": 15222,
+      "thin_pixels": 3386,
+      "green_pixels_strict": 13992,
+      "green_pixels_loose": 15232
+    },
+    {
+      "frame": 85,
+      "seconds": 9.444444444444445,
+      "green_pixels": 15366,
+      "thin_pixels": 3357,
+      "green_pixels_strict": 14141,
+      "green_pixels_loose": 15473
+    },
+    {
+      "frame": 86,
+      "seconds": 9.555555555555555,
+      "green_pixels": 14976,
+      "thin_pixels": 3264,
+      "green_pixels_strict": 13859,
+      "green_pixels_loose": 15255
+    },
+    {
+      "frame": 87,
+      "seconds": 9.666666666666666,
+      "green_pixels": 15035,
+      "thin_pixels": 3307,
+      "green_pixels_strict": 13884,
+      "green_pixels_loose": 15304
+    },
+    {
+      "frame": 88,
+      "seconds": 9.777777777777779,
+      "green_pixels": 15217,
+      "thin_pixels": 3398,
+      "green_pixels_strict": 14015,
+      "green_pixels_loose": 15357
+    },
+    {
+      "frame": 89,
+      "seconds": 9.88888888888889,
+      "green_pixels": 15066,
+      "thin_pixels": 3351,
+      "green_pixels_strict": 13859,
+      "green_pixels_loose": 15174
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+[
+  {
+    "stage": "camera_capture",
+    "input": "unspecified VideoCapture(0) device; sensor metadata unavailable",
+    "code": [
+      "code/original/flir_view_test.py",
+      "code/original/thermal_capture.py"
+    ],
+    "outputs": [
+      "media/captured-frames/frame_0.png..frame_51.png"
+    ],
+    "evidence": "docs/evidence/frame-inventory.csv",
+    "status": "capture code and stored grayscale frames present; exact capture session provenance unavailable"
+  },
+  {
+    "stage": "intensity_height_field",
+    "input": "docs/evidence/inputs/frame_0.png",
+    "code": [
+      "code/original/thermal_image_to_pointcloud.py",
+      "code/original/thermal_image_to_pointcloud_backup.py"
+    ],
+    "outputs": [
+      "docs/evidence/pointcloud/thermal_pointcloud.ply",
+      "docs/evidence/pointcloud/thermal_pointcloud_big.ply"
+    ],
+    "evidence": "docs/evidence/local-audit.json",
+    "status": "full vertex formula match independently verified, not metric geometry"
+  },
+  {
+    "stage": "mock_radar",
+    "input": "numpy random floor/wall/obstacle points, 2100 total in __main__",
+    "code": [
+      "code/original/firesight_radar_core.py"
+    ],
+    "outputs": [
+      "Open3D GUI, no matching saved experiment output verified"
+    ],
+    "status": "synthetic code; not radar hardware or thermal pointcloud processing"
+  },
+  {
+    "stage": "smoke_model_comparison",
+    "input": "SmokeBasement run3 32 training images; run5 120 held-out images",
+    "code": [
+      "code/selected/obstacle_edges/run_smoke.py",
+      "code/selected/obstacle_edges/contours.py"
+    ],
+    "outputs": [
+      "docs/evidence/obstacle-edges/results_summary.json",
+      "media/smoke-structural.mp4"
+    ],
+    "status": "historical executed experiment; copied metrics not retraining"
+  },
+  {
+    "stage": "composited_hud_audit",
+    "input": "media/boson-test.mp4",
+    "code": [
+      "code/selected/boson_review/analyze.py"
+    ],
+    "outputs": [
+      "docs/evidence/boson-review/evidence/audit.json"
+    ],
+    "status": "display stroke extraction only, not new thermal inference"
+  },
+  {
+    "stage": "detail_and_width",
+    "input": "media/smoke-original.mp4 + shared TEED probability maps",
+    "code": [
+      "code/selected/boson_review/verify_video.py"
+    ],
+    "outputs": [
+      "media/smoke-balanced-2px.mp4",
+      "docs/evidence/boson-review/evidence/video_verification_summary.json"
+    ],
+    "status": "display comparison; obstacle ground truth absent"
+  },
+  {
+    "stage": "distance_width",
+    "input": "public thermal + synthetic sinusoidal/step/noise depth maps",
+    "code": [
+      "code/selected/edge/teed/distance_width.py",
+      "code/selected/experiments/distance_width/benchmark.py"
+    ],
+    "outputs": [
+      "docs/evidence/distance-width/summary.json",
+      "docs/evidence/distance-width/benchmark_raw.csv"
+    ],
+    "status": "renderer behavior, not real distance accuracy"
+  },
+  {
+    "stage": "sustained_fps",
+    "input": "public thermal 120 frames looped at 30fps + synthetic TCP distance",
+    "code": [
+      "code/selected/experiments/distance_width/realtime_compare.py",
+      "code/selected/edge/teed/realtime_core.py",
+      "code/selected/edge/teed/stability.py"
+    ],
+    "outputs": [
+      "docs/evidence/realtime/cpu_30.csv",
+      "docs/evidence/realtime/gpu_eager_30.csv",
+      "docs/evidence/realtime/gpu_graph_30.csv",
+      "media/realtime-comparison.mp4"
+    ],
+    "status": "historical RTX PC benchmark, no Jetson/camera/display latency validation"
+  }
+]

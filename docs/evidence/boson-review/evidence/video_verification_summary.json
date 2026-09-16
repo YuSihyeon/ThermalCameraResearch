@@ -1,0 +1,219 @@
+{
+  "protocol": "hud_video_verification_v1",
+  "runtime_commit": "cca5acf18df70555ffefb0f5d0dc37ebf4564953",
+  "source": {
+    "filename": "smoke_heldout_original.mp4",
+    "sha256": "3bb826c914c96572ad796664a3e1941dff09803523f63671229f615a546f3aa2",
+    "fps": 10.0,
+    "frames": 120,
+    "duration_seconds": 12.0
+  },
+  "settings": {
+    "input_size": [
+      320,
+      240
+    ],
+    "output_size": [
+      640,
+      480
+    ],
+    "contrast_clip_limit": 2,
+    "background_scale": 0.24,
+    "detail_presets": {
+      "detailed": [
+        0.55,
+        0.75
+      ],
+      "balanced": [
+        0.6,
+        0.85
+      ],
+      "sparse": [
+        0.7,
+        0.9
+      ]
+    },
+    "modality": "thermal_gray"
+  },
+  "variants": {
+    "legacy": {
+      "mean_display_coverage_percent": 11.49787326388889,
+      "min_display_coverage_percent": 9.177083333333332,
+      "max_display_coverage_percent": 13.929687499999998,
+      "frames_without_edges": 0,
+      "highlight_pixels_sum": 0
+    },
+    "detailed_1px": {
+      "mean_display_coverage_percent": 1.2701144748263888,
+      "min_display_coverage_percent": 0.9886067708333333,
+      "max_display_coverage_percent": 1.6243489583333333,
+      "frames_without_edges": 0,
+      "highlight_pixels_sum": 0
+    },
+    "balanced_1px": {
+      "mean_display_coverage_percent": 1.1775960286458333,
+      "min_display_coverage_percent": 0.9280598958333334,
+      "max_display_coverage_percent": 1.5625,
+      "frames_without_edges": 0,
+      "highlight_pixels_sum": 0
+    },
+    "balanced_2px": {
+      "mean_display_coverage_percent": 2.632166883680555,
+      "min_display_coverage_percent": 2.07421875,
+      "max_display_coverage_percent": 3.453125,
+      "frames_without_edges": 0,
+      "highlight_pixels_sum": 0
+    },
+    "sparse_1px": {
+      "mean_display_coverage_percent": 1.0271511501736112,
+      "min_display_coverage_percent": 0.7548828125,
+      "max_display_coverage_percent": 1.32421875,
+      "frames_without_edges": 0,
+      "highlight_pixels_sum": 0
+    }
+  },
+  "files": {
+    "original": {
+      "frames_decoded": 120,
+      "fps": 10.0,
+      "size": [
+        640,
+        480
+      ],
+      "bytes": 3240683,
+      "sha256": "957b2cfe5b656c51b1ac9990156c2246af264128e7b7cbda3c3ea4a4974574f6"
+    },
+    "legacy": {
+      "frames_decoded": 120,
+      "fps": 10.0,
+      "size": [
+        640,
+        480
+      ],
+      "bytes": 2219993,
+      "sha256": "212d4b24def2ea42aceb6b52cfaa4fb2231f471fcfa9abcebbac100efd9071e5"
+    },
+    "detailed_1px": {
+      "frames_decoded": 120,
+      "fps": 10.0,
+      "size": [
+        640,
+        480
+      ],
+      "bytes": 2808257,
+      "sha256": "9433bcd110c0cbf94a41c0a33a5e51b42721560e9435c3792f3fa27fa944ca5a"
+    },
+    "balanced_1px": {
+      "frames_decoded": 120,
+      "fps": 10.0,
+      "size": [
+        640,
+        480
+      ],
+      "bytes": 2707300,
+      "sha256": "d8e54061c378ecbf99b3a9c6ee100991453dd319c1da5b2612c8d9bb0a022af4"
+    },
+    "balanced_2px": {
+      "frames_decoded": 120,
+      "fps": 10.0,
+      "size": [
+        640,
+        480
+      ],
+      "bytes": 2810512,
+      "sha256": "5579bf350a3c76a73c6f68ff6da02173c32cb7d442a507aafa3e9ed4bee39d87"
+    },
+    "sparse_1px": {
+      "frames_decoded": 120,
+      "fps": 10.0,
+      "size": [
+        640,
+        480
+      ],
+      "bytes": 2536508,
+      "sha256": "1e778bd449ad2dcdd0798e75d190e9a24c71d5a086649fd2b6fb8c23e3c1ceae"
+    },
+    "comparison": {
+      "frames_decoded": 120,
+      "fps": 10.0,
+      "size": [
+        1920,
+        1016
+      ],
+      "bytes": 16302389,
+      "sha256": "e3c1ef4cdaac9b09217bef22f8d9189af5ad505765fce235e6fcb700df9919c7"
+    }
+  },
+  "temporal_diagnostic": {
+    "detailed": {
+      "mean_residual_fraction": 0.1556087656364079,
+      "usable_pairs": 119,
+      "highest_residual_pairs": [
+        {
+          "frame": 32,
+          "seconds": 3.2,
+          "residual_fraction": 0.3501259445843829
+        },
+        {
+          "frame": 14,
+          "seconds": 1.4,
+          "residual_fraction": 0.32832781878340545
+        },
+        {
+          "frame": 6,
+          "seconds": 0.6,
+          "residual_fraction": 0.300763358778626
+        }
+      ]
+    },
+    "balanced": {
+      "mean_residual_fraction": 0.1472629773750448,
+      "usable_pairs": 119,
+      "highest_residual_pairs": [
+        {
+          "frame": 14,
+          "seconds": 1.4,
+          "residual_fraction": 0.32260748959778085
+        },
+        {
+          "frame": 32,
+          "seconds": 3.2,
+          "residual_fraction": 0.28680821441002435
+        },
+        {
+          "frame": 6,
+          "seconds": 0.6,
+          "residual_fraction": 0.2789834380354083
+        }
+      ]
+    },
+    "sparse": {
+      "mean_residual_fraction": 0.13334418094633346,
+      "usable_pairs": 119,
+      "highest_residual_pairs": [
+        {
+          "frame": 14,
+          "seconds": 1.4,
+          "residual_fraction": 0.31251903746573256
+        },
+        {
+          "frame": 6,
+          "seconds": 0.6,
+          "residual_fraction": 0.29843478260869566
+        },
+        {
+          "frame": 32,
+          "seconds": 3.2,
+          "residual_fraction": 0.27242277633048007
+        }
+      ]
+    }
+  },
+  "mean_flow_valid_pixel_fraction": 0.983415069152661,
+  "limits": [
+    "SmokeBasement encoded display video, not the supplied Boson HUD or temperature data",
+    "One scene, 12 seconds; no obstacle labels or accuracy/Jetson speed evaluation",
+    "Temporal residual includes occlusion, scene changes and flow error; not pure flicker",
+    "Shared inference comparison; processing throughput is not production pipeline FPS"
+  ]
+}

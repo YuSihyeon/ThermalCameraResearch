@@ -1,0 +1,10 @@
+{
+  "frames": 120,
+  "source_fps": 10.0,
+  "max_abs_probability_difference": 4.76837158203125e-07,
+  "mask_disagreement_pixels": 0,
+  "pixels_compared": 9216000,
+  "mask_disagreement_pct": 0.0,
+  "edge_iou": 1.0,
+  "compared": "same-device CUDA eager FP32 vs CUDA Graph FP32; all source frames"
+}
