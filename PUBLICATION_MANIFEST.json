@@ -16,13 +16,13 @@
   },
   {
     "path": "MEDIA.md",
-    "bytes": 4190,
-    "sha256": "ef8c362ccc53e7058aeb6763e2d6f1309fb859cbb2eef984498bfa314557f678"
+    "bytes": 4098,
+    "sha256": "c3ff6a62843aa08c0908741cc7c26e43c2aca8e233f34304f7be34986d62a4c9"
   },
   {
     "path": "README.md",
-    "bytes": 5842,
-    "sha256": "29297003ed9446933c31b14a9c42ddeee8dca4abfafd16914a886d13daa0ff76"
+    "bytes": 9045,
+    "sha256": "51a8b1009d4a2d9d9c586ac35834d7a59544877b9964a4ff3ad63111d071b394"
   },
   {
     "path": "VALIDATION.md",
@@ -523,16 +523,6 @@
     "path": "docs/evidence/video-previews/smoke-structural-review.jpg",
     "bytes": 115963,
     "sha256": "002b0a66854bc9feb39e73d832bd8c509555a6c0d37094f849713aad886cf5d8"
-  },
-  {
-    "path": "gallery.html",
-    "bytes": 6784,
-    "sha256": "8a666aa9c8e2190a475277176cd9ed5af58fdefee4812aa4a5179e2dd7385628"
-  },
-  {
-    "path": "index.html",
-    "bytes": 200,
-    "sha256": "54a3d640fa57627e92932f7e46adca6a29fb5d1f6f3cea1a08bd35584c55e43b"
   },
   {
     "path": "public-media/boson-test.jpg",

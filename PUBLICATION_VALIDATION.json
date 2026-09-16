@@ -1,8 +1,8 @@
 {
   "project": "06-ThermalCameraResearch",
-  "files": 126,
-  "bytes": 27683705,
-  "curated_links_checked": 31,
+  "files": 124,
+  "bytes": 27679832,
+  "curated_links_checked": 51,
   "issues": [],
   "status": "passed",
   "scope": "Independent public repository file hashes, JSON syntax, curated links and known-key patterns. Full private originals and external USB verification are separate."

@@ -4,7 +4,22 @@
 
 원본을 수정하지 않고 필요한 코드·지표·대표 입력/결과를 선별했다. 정리일은 2026-09-16이다. 팀 프로젝트 전체를 복제하지 않았으며, 이 저장소의 `code/selected`는 해당 실험을 설명하는 코드 발췌다. 전체 FireSight 앱이나 모든 의존성이 포함된 배포본이 아니다.
 
-**[영상 갤러리 열기](https://yusihyeon.github.io/ThermalCameraResearch/gallery.html)** · [영상 6개와 보존 MP4 다운로드](MEDIA.md) · [검증 기록](VALIDATION.md) · [전체 원본 데이터·복원 안내](DATA_AND_RESTORE.md)
+[영상 6개와 보존 MP4 다운로드](MEDIA.md) · [검증 기록](VALIDATION.md) · [전체 원본 데이터·복원 안내](DATA_AND_RESTORE.md)
+
+## 영상과 설명
+
+영상 제목이나 미리보기를 누르면 해당 MP4 파일을 열 수 있습니다.
+
+| 영상 | 설명 |
+|---|---|
+| [**Boson HUD 보존 영상**](public-media/boson-test.mp4)<br>[![Boson HUD 보존 영상 미리보기](public-media/boson-test.jpg)](public-media/boson-test.mp4) | 10초. 직접 제공된 초록 윤곽 HUD 영상입니다. 이미 합성된 표시 결과이며 원시 센서·절대온도 자료는 아닙니다. [보존 MP4](https://github.com/YuSihyeon/ThermalCameraResearch/releases/download/thermal-media-2026-09-16/boson-test.mp4) |
+| [**거리별 굵기 · 가정 거리 시연**](public-media/distance-preview.mp4)<br>[![거리별 굵기 · 가정 거리 시연 미리보기](public-media/distance-preview.jpg)](public-media/distance-preview.mp4) | 12초. 가정한 거리값에 따라 선 굵기를 바꾼 결과입니다. 열화상 거리 복원이나 레이더 실측 연동 결과는 아닙니다. [보존 MP4](https://github.com/YuSihyeon/ThermalCameraResearch/releases/download/thermal-media-2026-09-16/distance-preview.mp4) |
+| [**농연 입력 · SmokeBasement**](public-media/smoke-original.mp4)<br>[![농연 입력 · SmokeBasement 미리보기](public-media/smoke-original.jpg)](public-media/smoke-original.mp4) | 12초. 공개 열화상 데이터에서 선정·재표본화한 입력 구간입니다. 직접 Boson으로 촬영한 농연 실험과 구분합니다. [보존 MP4](https://github.com/YuSihyeon/ThermalCameraResearch/releases/download/thermal-media-2026-09-16/smoke-original.mp4) |
+| [**TEED 구조 경계 후처리**](public-media/smoke-structural.mp4)<br>[![TEED 구조 경계 후처리 미리보기](public-media/smoke-structural.jpg)](public-media/smoke-structural.mp4) | 12초. 농연 입력의 경계를 선택·세선화한 출력입니다. 선 점유율 감소를 장애물 검출 정확도 향상률로 해석하지 않습니다. [보존 MP4](https://github.com/YuSihyeon/ThermalCameraResearch/releases/download/thermal-media-2026-09-16/smoke-structural.mp4) |
+| [**Balanced · 2px 표시 후보**](public-media/smoke-balanced-2px.mp4)<br>[![Balanced · 2px 표시 후보 미리보기](public-media/smoke-balanced-2px.jpg)](public-media/smoke-balanced-2px.mp4) | 12초. 같은 확률맵에서 상세도와 선 두께를 조절한 비교입니다. 런타임 기본값은 1px이며 실제 안경 실장 평가는 아닙니다. [보존 MP4](https://github.com/YuSihyeon/ThermalCameraResearch/releases/download/thermal-media-2026-09-16/smoke-balanced-2px.mp4) |
+| [**연속 굵기 · 처리 방식 비교**](public-media/realtime-comparison.mp4)<br>[![연속 굵기 · 처리 방식 비교 미리보기](public-media/realtime-comparison.jpg)](public-media/realtime-comparison.mp4) | 12초. 공개 열화상과 합성 거리 입력으로 만든 비교 영상입니다. PC 지속 FPS 검증 조건과 수치는 본문에 따로 기록했습니다. [보존 MP4](https://github.com/YuSihyeon/ThermalCameraResearch/releases/download/thermal-media-2026-09-16/realtime-comparison.mp4) |
+
+Boson HUD를 제외한 다섯 영상은 SmokeBasement(Jianzhu Huai, 2025, CC BY 4.0)의 선정·재표본화 또는 처리 파생물입니다. [영상별 원본 정보](MEDIA.md) · [데이터 출처](docs/SOURCE_CREDITS.md).
 
 ## 읽는 순서
 

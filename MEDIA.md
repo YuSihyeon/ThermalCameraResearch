@@ -1,6 +1,6 @@
 # 열화상 영상 안내
 
-[브라우저 갤러리](https://yusihyeon.github.io/ThermalCameraResearch/gallery.html) · [연구 보고서](README.md) · [출처](docs/SOURCE_CREDITS.md)
+[연구 보고서](README.md) · [출처](docs/SOURCE_CREDITS.md)
 
 원본 보존 MP4는 Release에서 내려받고, 저장소에서는 축소한 H.264/VP9 미리보기를 볼 수 있습니다. `smoke-original`도 공개 원 데이터에서 선정·재표본화한 클립이며 전체 센서 원본이 아닙니다. 현장 휴대폰 영상은 로컬에만 보존했습니다.
 
