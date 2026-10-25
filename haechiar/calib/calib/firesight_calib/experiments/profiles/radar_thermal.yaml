@@ -1,0 +1,13 @@
+schema: firesight.experiment_profile/v1
+mode: radar_thermal
+streams: [thermal, radar]
+group_id: null
+sources: []
+registration: null
+edge_model: null
+priority: 2
+pending:
+  - AWR6843AOPEVM 펌웨어와 출력 프로토콜 및 연결 포트
+  - 레이더에서 관측되는 타깃과 열영상 타깃의 물리 대응점
+  - 브래킷 제작 후 레이더 좌표계에서 열영상 좌표계로의 보정
+  - 시간 차이 허용값 실측 및 저시정 반복 실험

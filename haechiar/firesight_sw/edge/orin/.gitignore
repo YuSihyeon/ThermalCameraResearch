@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+models/
+*.pth
+*.pt
+*.onnx
+*.engine
+*.mp4
+*.avi
+dist/
+camera_*.png
+*_metrics.json
+metrics_*.json
+m_*.json
+docs/

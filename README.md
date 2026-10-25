@@ -4,13 +4,26 @@
 
 농연 영상에서 벽·문틀·장애물의 경계를 읽기 쉽게 표시하는 방법을 탐색합니다. 기존 경계·거리 HUD 실험에 HaechiAR의 최신 Boson 촬영, 윤곽 안정화, 보정·센서 융합 작업을 연결해 정리했습니다.
 
-[최신 진행](#최신-진행) · [연구 흐름](#연구-흐름) · [그림과 영상](#그림과-영상) · [검증 범위](#검증-범위) · [자료 안내](#자료-안내)
+[실행 코드](#실행-코드) · [최신 진행](#최신-진행) · [그림과 영상](#그림과-영상) · [검증 범위](#검증-범위) · [자료 안내](#자료-안내)
 
-**업데이트 기준: 2026-10-23.** `firesight_sw/main`의 2026-10-15 반영본과 `calib/YSH`의 2026-09-24 개발본을 확인했습니다. [커밋·출처·반영 범위](UPSTREAM_STATUS.md)
+**코드 업데이트: 2026-10-25.** HaechiAR의 `firesight_sw/main` (`339af10`)과 `calib/YSH` (`659dca3`) 소스를 이 저장소에 가져왔습니다. 기존 이미지·영상과 연구 기록은 유지합니다. [설치·실행 안내](haechiar/README.md) · [커밋·반영 범위](UPSTREAM_STATUS.md)
 
 <img src="docs/evidence/obstacle-edges/smoke-comparison.png" width="960" alt="공개 농연 열화상에 기존 TEED, 세선화, 구조 경계 처리, 제한적 adaptation과 PiDiNet을 적용한 비교">
 
 **SmokeBasement 농연 영상의 경계 처리 비교.** 기존 TEED, 세선화, 구조 경계, 제한적 adaptation, PiDiNet의 화면을 비교합니다. 직접 Boson으로 촬영한 농연 실험은 아닙니다.
+
+## 실행 코드
+
+| 목적 | 시작 위치 |
+|---|---|
+| Boson 320 raw 촬영·세션 점검 | [촬영 도구](haechiar/firesight_sw/data/capture/boson/README.md) |
+| TEED 윤곽선·시간 안정화·고온 색상 HUD | [윤곽선 런타임](haechiar/firesight_sw/edge/orin/README.md) |
+| MonoTher-Depth·AnyThermal·RIDERS 비교 | [깊이 추정 wrapper](haechiar/firesight_sw/depth/README.md) |
+| Boson 내부 보정·RGB-D/레이더 융합 | [보정 패키지](haechiar/calib/README.md) · [센서 실험](haechiar/calib/calib/docs/experiments.md) |
+
+**[처음 실행하기 →](haechiar/README.md)** 가상환경 설치, 카메라 없는 합성 데모,
+기존 공개 영상의 CPU 처리와 검사 명령을 한곳에 정리했습니다.
+기존 `code/`는 과거 실험 보존본이며, 최신 실행 코드는 `haechiar/`에 있습니다.
 
 ## 최신 진행
 
@@ -42,7 +55,7 @@
 | 경계 선택 | 엣지 점유율, 구조 경계·세선화 비교 |
 | 거리 HUD | 합성 거리의 연속 선 굵기와 EMA 실험 |
 | 지속 처리 | 180초 CPU/CUDA 시험의 수치·영상 |
-| 후속 개발 | HaechiAR 최신 작업 요약과 커밋 출처 |
+| 후속 개발 | HaechiAR 최신 실행 코드·설치 안내·파일별 원본 해시 |
 
 ## 그림과 영상
 
@@ -98,14 +111,16 @@
 | 10/8 최신 색상·윤곽 처리 | CPU 전체 2.47–3.48 FPS, 15/30 FPS 조건 미충족 | 다른 CPU·후처리·입력 조건 |
 | 9/24 센서 융합 개발 | 보존 기록 107 passed, 3 skipped | 합성·개발 환경 검사, 실장비 성능 아님 |
 
-이번 업데이트는 저장소 문서와 결과 기록의 대조입니다. 새로운 카메라 촬영·모델 학습·benchmark 실행은 수행하지 않았습니다.
+위 표는 기존 연구 기록입니다. 2026-10-25 코드 이관 후의 소프트웨어 검사와 실행 결과는
+[별도 검증 기록](haechiar/VALIDATION.md)에 정리했습니다. 실제 카메라·Jetson 성능과 모델 학습은 검증 범위에 포함하지 않습니다.
 
 ## 자료 안내
 
 - [최신 HaechiAR 작업과 출처](UPSTREAM_STATUS.md)
+- [최신 코드 설치·실행](haechiar/README.md) · [이관 검증](haechiar/VALIDATION.md)
 - [상세 연구 기록](RESEARCH_DETAILS.md): 기존 실험의 입력·방법·수치·해석 전체
 - [입력](docs/01-inputs.md) · [처리 과정](docs/02-process.md) · [결과](docs/03-results.md) · [분석](docs/04-analysis.md)
-- [코드 안내](code/README.md) · [영상 정보](MEDIA.md) · [검증 기록](VALIDATION.md)
+- [이전 코드 보존본](code/README.md) · [영상 정보](MEDIA.md) · [기존 검증 기록](VALIDATION.md)
 - [데이터·환경 복원](DATA_AND_RESTORE.md) · [이전 보고서](RESEARCH_REPORT.md)
 
 **출처.** Boson HUD를 제외한 공개 영상 5개는 SmokeBasement — Jianzhu Huai (2025), CC BY 4.0의 처리 파생물입니다. [원 데이터](https://doi.org/10.5281/zenodo.15173055) · [출처와 변환 내역](docs/SOURCE_CREDITS.md). TEED·PiDiNet과 각 깊이 모델은 외부 기반이며 팀 시스템과 개인 연구 기록의 범위를 구분합니다.

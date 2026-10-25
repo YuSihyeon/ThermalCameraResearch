@@ -1,0 +1,2040 @@
+{
+  "schema": 1,
+  "synchronized_on": "2026-10-25",
+  "target_base": "d1ee7fb0402bcb8881029dbf9c6e983d527603d5",
+  "sources": [
+    {
+      "repository": "HaechiAR/firesight_sw",
+      "branch": "main",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "excluded_paths": [
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/A02/camera_motion.json",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/A02/frozen_frames.csv",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/A02/meta.json",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/A02/timestamps.csv",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/연습/TEST01/frozen_frames.csv",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/연습/TEST01/meta.json",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/연습/TEST01/timestamps.csv",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/연습/TEST_DENSE/frozen_frames.csv",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/연습/TEST_DENSE/meta.json",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/연습/TEST_DENSE/timestamps.csv",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/연습/TEST_DENSE2/frozen_frames.csv",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/연습/TEST_DENSE2/meta.json",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/연습/TEST_DENSE2/timestamps.csv",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/중단된_녹화/A02_1459_19s/frozen_frames.csv",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/중단된_녹화/A02_1459_19s/meta.json",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/녹화/중단된_녹화/A02_1459_19s/timestamps.csv",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/촬영계획.md",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/촬영순서.csv",
+        "data/collection/2026-10-12_1차/_보관_포그포함_오후촬영/현장로그.csv",
+        "data/collection/2026-10-12_1차/sessions/A02/frozen_frames.csv",
+        "data/collection/2026-10-12_1차/sessions/A02/meta.json",
+        "data/collection/2026-10-12_1차/sessions/A02/motion.csv",
+        "data/collection/2026-10-12_1차/sessions/A02/timestamps.csv",
+        "data/collection/2026-10-12_1차/촬영_결과_요약.md",
+        "data/collection/2026-10-12_1차/촬영계획.md",
+        "data/collection/2026-10-12_1차/촬영순서.csv",
+        "data/collection/2026-10-12_1차/현장로그.csv",
+        "data/collection/2026-10-14_2차/sessions/H00/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/H00/meta.json",
+        "data/collection/2026-10-14_2차/sessions/H00/motion.csv",
+        "data/collection/2026-10-14_2차/sessions/H00/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/H01/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/H01/meta.json",
+        "data/collection/2026-10-14_2차/sessions/H01/motion.csv",
+        "data/collection/2026-10-14_2차/sessions/H01/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/H02/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/H02/meta.json",
+        "data/collection/2026-10-14_2차/sessions/H02/motion.csv",
+        "data/collection/2026-10-14_2차/sessions/H02/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/H03/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/H03/meta.json",
+        "data/collection/2026-10-14_2차/sessions/H03/motion.csv",
+        "data/collection/2026-10-14_2차/sessions/H03/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/M01/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/M01/meta.json",
+        "data/collection/2026-10-14_2차/sessions/M01/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/M02/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/M02/meta.json",
+        "data/collection/2026-10-14_2차/sessions/M02/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/M03/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/M03/meta.json",
+        "data/collection/2026-10-14_2차/sessions/M03/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/M04/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/M04/meta.json",
+        "data/collection/2026-10-14_2차/sessions/M04/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/M05/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/M05/meta.json",
+        "data/collection/2026-10-14_2차/sessions/M05/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/M06/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/M06/meta.json",
+        "data/collection/2026-10-14_2차/sessions/M06/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/M07/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/M07/meta.json",
+        "data/collection/2026-10-14_2차/sessions/M07/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/P01/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/P01/meta.json",
+        "data/collection/2026-10-14_2차/sessions/P01/motion.csv",
+        "data/collection/2026-10-14_2차/sessions/P01/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/P02/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/P02/meta.json",
+        "data/collection/2026-10-14_2차/sessions/P02/motion.csv",
+        "data/collection/2026-10-14_2차/sessions/P02/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/T01/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/T01/meta.json",
+        "data/collection/2026-10-14_2차/sessions/T01/motion.csv",
+        "data/collection/2026-10-14_2차/sessions/T01/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/T02/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/T02/meta.json",
+        "data/collection/2026-10-14_2차/sessions/T02/motion.csv",
+        "data/collection/2026-10-14_2차/sessions/T02/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/T03/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/T03/meta.json",
+        "data/collection/2026-10-14_2차/sessions/T03/motion.csv",
+        "data/collection/2026-10-14_2차/sessions/T03/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/T04/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/T04/meta.json",
+        "data/collection/2026-10-14_2차/sessions/T04/motion.csv",
+        "data/collection/2026-10-14_2차/sessions/T04/timestamps.csv",
+        "data/collection/2026-10-14_2차/sessions/T05/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/sessions/T05/meta.json",
+        "data/collection/2026-10-14_2차/sessions/T05/motion.csv",
+        "data/collection/2026-10-14_2차/sessions/T05/timestamps.csv",
+        "data/collection/2026-10-14_2차/재촬영_보관/P01_제외_frame851-1029/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/재촬영_보관/P01_제외_frame851-1029/meta_원본.json",
+        "data/collection/2026-10-14_2차/재촬영_보관/P01_제외_frame851-1029/motion.csv",
+        "data/collection/2026-10-14_2차/재촬영_보관/P01_제외_frame851-1029/timestamps.csv",
+        "data/collection/2026-10-14_2차/재촬영_보관/T01_2040_카메라기울어짐/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/재촬영_보관/T01_2040_카메라기울어짐/meta.json",
+        "data/collection/2026-10-14_2차/재촬영_보관/T01_2040_카메라기울어짐/motion.csv",
+        "data/collection/2026-10-14_2차/재촬영_보관/T01_2040_카메라기울어짐/timestamps.csv",
+        "data/collection/2026-10-14_2차/중단된_녹화/M03_2010_32s_중단/frozen_frames.csv",
+        "data/collection/2026-10-14_2차/중단된_녹화/M03_2010_32s_중단/meta.json",
+        "data/collection/2026-10-14_2차/중단된_녹화/M03_2010_32s_중단/timestamps.csv",
+        "data/collection/2026-10-14_2차/촬영_결과_요약.md",
+        "data/collection/2026-10-14_2차/촬영계획.md",
+        "data/collection/2026-10-14_2차/촬영순서.csv",
+        "data/collection/2026-10-14_2차/현장로그.csv",
+        "data/collection/README.md"
+      ]
+    },
+    {
+      "repository": "HaechiAR/calib",
+      "branch": "YSH",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "excluded_paths": [
+        ".github/workflows/test.yml"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "destination": "haechiar/firesight_sw/.gitattributes",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": ".gitattributes",
+      "mode": "100644",
+      "git_blob": "7973d9c4cc1a9a9ef951648a8326aad62fcab23e",
+      "sha256": "f54f570e29f35b9b757715ee1bb73568ead8144a4e8dff01b2b48137a0994d93"
+    },
+    {
+      "destination": "haechiar/firesight_sw/.gitignore",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": ".gitignore",
+      "mode": "100644",
+      "git_blob": "17a06a38805196213f00d4e322fe486ed2288cbc",
+      "sha256": "aa835ea08edb4dbf94485c9230591098ef9f4a0d2efde0c79f5173beb0a98681"
+    },
+    {
+      "destination": "haechiar/firesight_sw/README.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "README.md",
+      "mode": "100644",
+      "git_blob": "b3acb471161cf1caee2e8253b65d67d846201aed",
+      "sha256": "846259647e3220f9f73661ab061618edc46cb1be5a69c1ad049b563adedfcce3"
+    },
+    {
+      "destination": "haechiar/firesight_sw/data/README.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "data/README.md",
+      "mode": "100644",
+      "git_blob": "6ff72cb8efd6e18a21f482888990485ea67aa550",
+      "sha256": "173b78c7258ad9031dc977a23ea301d1aeb19adb018e194dadd619a50d39706d"
+    },
+    {
+      "destination": "haechiar/firesight_sw/data/capture/boson/README.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "data/capture/boson/README.md",
+      "mode": "100644",
+      "git_blob": "7fc154d974bfd20f56d51bc1db91470e89e1f048",
+      "sha256": "b100087e79d03ef7ce7b69d34dcb8b6130327411a2eff35610f03fc47b7b4767"
+    },
+    {
+      "destination": "haechiar/firesight_sw/data/capture/boson/check_sessions.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "data/capture/boson/check_sessions.py",
+      "mode": "100644",
+      "git_blob": "ede40142b4494bb91cf11a814103538b6d2ff0d0",
+      "sha256": "0ae1c096cfea7a553a04f550ecc2ec5efc62f8fe8d976b6e7af2f96a5f20ea68"
+    },
+    {
+      "destination": "haechiar/firesight_sw/data/capture/boson/fill_log.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "data/capture/boson/fill_log.py",
+      "mode": "100644",
+      "git_blob": "16c9586b6b2ba09604f7fa90a0dda9f854e0b0de",
+      "sha256": "616059125ef8aae43e7f920950f0b3cffb6a18cf75b262ea5f3efcb71e18ca67"
+    },
+    {
+      "destination": "haechiar/firesight_sw/data/capture/boson/live_view.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "data/capture/boson/live_view.py",
+      "mode": "100644",
+      "git_blob": "940aee8dc05f6371a54e349f42d1fdca19a17709",
+      "sha256": "51589e21e1ed2182750f1141a61808508e425b36b8823d3c9a60e27b44ab8c34"
+    },
+    {
+      "destination": "haechiar/firesight_sw/data/capture/boson/pack_for_drive.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "data/capture/boson/pack_for_drive.py",
+      "mode": "100644",
+      "git_blob": "d1df4cb61d390b5e165b679a87c63b85ee3a717b",
+      "sha256": "15dc991dd554056fd702361098386860aecb117384d68bcaa733846b0d1dcbee"
+    },
+    {
+      "destination": "haechiar/firesight_sw/data/capture/boson/record_session.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "data/capture/boson/record_session.py",
+      "mode": "100644",
+      "git_blob": "cb8abe6f355dd589ab53e93083b20a87164d38a5",
+      "sha256": "a6b92d75f18d2967441eb6f2bf542a91b3ee10a85d10d17840cf8ffd0c2938ea"
+    },
+    {
+      "destination": "haechiar/firesight_sw/data/capture/boson/requirements.txt",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "data/capture/boson/requirements.txt",
+      "mode": "100644",
+      "git_blob": "b87db4d866d70823c5aa26934eb822c623f0f307",
+      "sha256": "3338f8365aa2ed61ad14bc8e624bd880b465dd7d58049d7d1cc2d09f2b95cbdb"
+    },
+    {
+      "destination": "haechiar/firesight_sw/data/capture/boson/tests/replay_motion.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "data/capture/boson/tests/replay_motion.py",
+      "mode": "100644",
+      "git_blob": "e8c6a73e3ff7e0c60df2f4c49ccf4fbc32c87bd6",
+      "sha256": "90a7324ef18b2f85994c159338432bda3bc9f80fb87a6e635c5151bdec976851"
+    },
+    {
+      "destination": "haechiar/firesight_sw/data/capture/boson/tests/test_load_15min.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "data/capture/boson/tests/test_load_15min.py",
+      "mode": "100644",
+      "git_blob": "04ef52ed801bbc0b1dc0d1cc0f3568d7b028a81a",
+      "sha256": "35ccb29d8a5068b3edd607df27916145d9cb626b987e48a5ffcc5a0ebb27a150"
+    },
+    {
+      "destination": "haechiar/firesight_sw/data/capture/boson/trim_session.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "data/capture/boson/trim_session.py",
+      "mode": "100644",
+      "git_blob": "e690c527c2e3d6604b053d98e9a1808476ff5877",
+      "sha256": "5b2204b2c2af7df2ade88e0162720edd9cc0f81f54cd7d21700e398896b6b962"
+    },
+    {
+      "destination": "haechiar/firesight_sw/data/capture/boson/촬영시작.bat.example",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "data/capture/boson/촬영시작.bat.example",
+      "mode": "100644",
+      "git_blob": "18b0b028fd690fb2866ac1082e5225113e4444be",
+      "sha256": "91d0b541f5cdf8ab380f4741e263aa5fc939d4ae3b2be4c3bf17f30cbdf31ee7"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/.gitignore",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/.gitignore",
+      "mode": "100644",
+      "git_blob": "2f421610ad7b0ca3429654d7f2b0f933f1436aed",
+      "sha256": "004e6bcf9f8dd9dd3580660cbe81fdd3988f2eff140622f5c893b21de07eef2e"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/README.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/README.md",
+      "mode": "100644",
+      "git_blob": "3bf5610f4dd2e1744dae420e776cf133a3b40675",
+      "sha256": "382bc4e5a505e3c2251b255307117e0e4c9f12781e5fcec339785afb3a60be39"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/anythermal/README.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/anythermal/README.md",
+      "mode": "100644",
+      "git_blob": "de1e43983a0c0524bb0422d4570f29ec7b578dd2",
+      "sha256": "83aad6c3b94c1ab08d57e5c880ed80625a086f531c41ca692617dd9352907b22"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/anythermal/requirements.txt",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/anythermal/requirements.txt",
+      "mode": "100644",
+      "git_blob": "971dbb5d9cd0653c105b094a4b73dd0ce45a17b7",
+      "sha256": "1ad0d9a1db3ce7d275c1d388e0fc04611f4ec9b0b94c37d202480dbc95da1c32"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/anythermal/run.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/anythermal/run.py",
+      "mode": "100644",
+      "git_blob": "fe34736c2292bc657d8d827555982da33385caa3",
+      "sha256": "5589dae99d43490fb7fa0aba8d8499b81a80c1e17c0e4e6e08a2993b7413882e"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/anythermal/setup.sh",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/anythermal/setup.sh",
+      "mode": "100644",
+      "git_blob": "f7a2bcad87a2cb2fb2904f9ad4c727867f88805d",
+      "sha256": "ed738620aaed1bb2df0e45aee7a2ca56fc86c3a90b2151be7a4e665259a3f744"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/monother_depth/README.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/monother_depth/README.md",
+      "mode": "100644",
+      "git_blob": "8b6682f578ddec8df6eda42fe72db58b86c7a4ee",
+      "sha256": "554444d0dfe2a97cecc45d143aceadb85801ffbd510b7124b2a8fe167003f73c"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/monother_depth/requirements.txt",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/monother_depth/requirements.txt",
+      "mode": "100644",
+      "git_blob": "49b29babfab2eca6df3f88dfffea0a8dd10d45f8",
+      "sha256": "d45499d332ce0bf28e1a1dc55983f562748c799d25817e0155936bbb17d036c0"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/monother_depth/run.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/monother_depth/run.py",
+      "mode": "100644",
+      "git_blob": "90204bbe37e8dc3e9593b462f2ef4a5d8bd2645d",
+      "sha256": "8b40cb53e9563a0f9dfa83cb53abc5914cddc2fdcfd62cd5660ba2f9d8ca4c03"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/monother_depth/setup.sh",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/monother_depth/setup.sh",
+      "mode": "100644",
+      "git_blob": "7d57db6b93185a51fce6bcb4b1f6a0e433b9d33d",
+      "sha256": "01a3f9853f66936824e9074b71e46fe3fddfc790fa722b7eea30f362d17492fe"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/riders/README.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/riders/README.md",
+      "mode": "100644",
+      "git_blob": "6ce2834a6076f64e503d0f5e91cc0fea30ed32c5",
+      "sha256": "650eb4427b9e730d2b89cea07a2dadddfdd04bc38dd38376c4bd0953fb0c2066"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/riders/prepare_inputs.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/riders/prepare_inputs.py",
+      "mode": "100644",
+      "git_blob": "210a67ff172f216caba708815e266189300f2ccb",
+      "sha256": "36c36246d2d43502424ad4de8541814ceb0b2254c16e5adce4ce35f5916a9ded"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/riders/requirements.txt",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/riders/requirements.txt",
+      "mode": "100644",
+      "git_blob": "971dbb5d9cd0653c105b094a4b73dd0ce45a17b7",
+      "sha256": "1ad0d9a1db3ce7d275c1d388e0fc04611f4ec9b0b94c37d202480dbc95da1c32"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/riders/run_stage1_alignment.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/riders/run_stage1_alignment.py",
+      "mode": "100644",
+      "git_blob": "72c10dfd54cef2837437eeea1a65d6fa761613d1",
+      "sha256": "27d931a995e04c68e1a3e692033dbce39f1a2e46f6c7cbe62fa291969448b944"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/riders/setup.sh",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/riders/setup.sh",
+      "mode": "100644",
+      "git_blob": "e28629faeb3ec054cf51bf79a1cd083af3ad7245",
+      "sha256": "505f39a9bd8a124a3e4fa25a515d95e2f99d24987153f0bc7520493d95beb34c"
+    },
+    {
+      "destination": "haechiar/firesight_sw/depth/thermal_io.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "depth/thermal_io.py",
+      "mode": "100644",
+      "git_blob": "db97de8ca02414d8a5c36d8a833d16f17dd7cbfa",
+      "sha256": "6f052481b0d0935e647a19330dda77ff91b4d2782ceda383386d91a3032c8a43"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/additional_thermal_sources.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/additional_thermal_sources.md",
+      "mode": "100644",
+      "git_blob": "06e79314b0249752701505734fd464d503dcf32c",
+      "sha256": "0342ef51921f1647619d2530fd964c0ca62344cc5f2c492f0f59b5870543c2c1"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/build_fire360_processing_stages.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/build_fire360_processing_stages.py",
+      "mode": "100644",
+      "git_blob": "526d1385e9afe1b1f1930f3fdef7dd21e5dbad72",
+      "sha256": "d21f447fb27645bc37dbdb5f378b5a3bbde9c1297113073666f2c10325ee3c87"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/build_teed_ui_assets.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/build_teed_ui_assets.py",
+      "mode": "100644",
+      "git_blob": "2714061f1024e801f089148a0a14325d3c27bae9",
+      "sha256": "c0e4310ff4437f97052a95cf1b79e8c6b56b7678216bbbe0ffb0f19ff4cbe66d"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/contour_stability.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/contour_stability.md",
+      "mode": "100644",
+      "git_blob": "746010850b9f519699396e57a4c82a2ff9f22e6a",
+      "sha256": "26b30fe775fd3da7334a9978a7415618d3e2fcdad17092ad04b8e5740c8b5978"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/edge_residual_cleanup.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/edge_residual_cleanup.md",
+      "mode": "100644",
+      "git_blob": "a4d008e111fc168347aef07e43a27be1ed7fce74",
+      "sha256": "49219737478d9fc07e808f9b2a738e64c048216e253c564a7e6e8727ba1a9aba"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/fire360_stages/01_fire360_input.png",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/fire360_stages/01_fire360_input.png",
+      "mode": "100644",
+      "git_blob": "4f27371c7ce96609404c4c674c64cd05e4443e51",
+      "sha256": "27de775b0abcdcf09641597b52b0f1794d1cc177678f342c9131c5b32d817804"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/fire360_stages/02_low_visibility_preprocessing.png",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/fire360_stages/02_low_visibility_preprocessing.png",
+      "mode": "100644",
+      "git_blob": "c5dcc1b4705ec8597cb3ee49276baf1bd9cc0bf9",
+      "sha256": "7033a30934920bc0fcaa17fe958c685f5580d8681e9e68306cdc1d1daaf3b805"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/fire360_stages/03_teed_probability.png",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/fire360_stages/03_teed_probability.png",
+      "mode": "100644",
+      "git_blob": "e98674075434bc434bcf502197f2349fceea4dd1",
+      "sha256": "c2d939184ce358d335ade8a0c8994b03a66478eec816ca75b02448e0a6d8e13f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/fire360_stages/04_field_postprocessing.png",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/fire360_stages/04_field_postprocessing.png",
+      "mode": "100644",
+      "git_blob": "af8e2fbf432ea11d648fe597b42b7607c37344c8",
+      "sha256": "38aed8927e8dc4376fac8f988707d6fcf0ca1192a592dcb53d342e9410661904"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/fire360_teed_processing_stages.png",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/fire360_teed_processing_stages.png",
+      "mode": "100644",
+      "git_blob": "d5f3612ea63449640a8bc54ca180abac03acf63c",
+      "sha256": "e63425eb11f5f16500374a4dee1e5733bf881d7db9379dc83870edbddd98e528"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/fire360_thermal_camera_research.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/fire360_thermal_camera_research.md",
+      "mode": "100644",
+      "git_blob": "f389e108e1b33da9d798ae70ed96e5d77a217233",
+      "sha256": "d39a2edc9eb00777b7249a21de2f3bbe37cef7da7917fa18969740e948261d68"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/firesight_edge_mvp_technical_overview.png",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/firesight_edge_mvp_technical_overview.png",
+      "mode": "100644",
+      "git_blob": "dcb71e2f3086fe1a379c1dd0a48b34deb0e1fb2f",
+      "sha256": "25d84542fcfaf6168b57d63ea748b5cd81d9c848cb87c74dd5a08aab06902ebd"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/full_thermal_videos.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/full_thermal_videos.md",
+      "mode": "100644",
+      "git_blob": "fc80303cb42fa2c1faa138fb707217b7489257b2",
+      "sha256": "11d3b06374609db9cb9e18da0bb3a5e532ffde1534fd78f41df3806b732b8d1e"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/motion_separation.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/motion_separation.md",
+      "mode": "100644",
+      "git_blob": "865e5183b555281f0bf8a041bdea29edd83bd7da",
+      "sha256": "c1f36ee7d66370691bcdbcc9c429c08449218093a5e9e17dd2b5876323894ac0"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/mvp_technical_overview.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/mvp_technical_overview.md",
+      "mode": "100644",
+      "git_blob": "211e0a72b063db7b947e9ff7258995bf299a6a9a",
+      "sha256": "8654c5b22346f304616ceec65c33d8d0261d645dab9fc0a4c9f4668a36e5a2ed"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/teed_ui_improvement.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/teed_ui_improvement.md",
+      "mode": "100644",
+      "git_blob": "5b279d5fef24b5382cb9db512ea6fe3731254067",
+      "sha256": "499daefa12e17c178711d549751413874a12c33b52f43a7db06fb7a368110d9f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/teed_ui_release.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/teed_ui_release.md",
+      "mode": "100644",
+      "git_blob": "5f3fc8c71d31f7c69b849aa79f64e5f5785cd1b7",
+      "sha256": "d3e049a133d80943f9de1293799bf248db5f3738bb63e5e64211640e8930becf"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/teed_ui_validation/.gitignore",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/teed_ui_validation/.gitignore",
+      "mode": "100644",
+      "git_blob": "4627920453b11be0395bdc2ab776a581ba69da16",
+      "sha256": "60aa39c099ef44337541f585555c157e42a4af1a0ce88ab1a9039b9d8314ecf4"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/teed_ui_validation/pyrightconfig.json",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/teed_ui_validation/pyrightconfig.json",
+      "mode": "100644",
+      "git_blob": "4b72c380c3b25f24dab8c1c8f51121e6272be981",
+      "sha256": "3f5fec1c864434a69de28d73ed6a647f62af29e1b66b13d2a01369f2247522ca"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/teed_ui_validation/teed_algorithm_status.png",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/teed_ui_validation/teed_algorithm_status.png",
+      "mode": "100644",
+      "git_blob": "faec9ce25c47f9aefcc3e14ce5cbf9f3f9de18ae",
+      "sha256": "64455a00a20e9f4e542b7a1368cf1b2dea680d7b63d8cc1cd9beeb6f10befe41"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/teed_ui_validation/temperature_contract.png",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/teed_ui_validation/temperature_contract.png",
+      "mode": "100644",
+      "git_blob": "be65f78985eb62e4cdf38550f354c61d87ee997f",
+      "sha256": "00914c2ffe78e82120c08735218da036e9eb2aed4c10418d49dffeb57307b18b"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/temporal_stability.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/temporal_stability.md",
+      "mode": "100644",
+      "git_blob": "ee91dcfb3ad45b60adf968f397ae9fb688ee90bc",
+      "sha256": "7fda5aca0f559a911a2b337ea20fd59ff16b6d05e2bd3818391e4781a23f9fa9"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/thermal_color_runtime_results.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/thermal_color_runtime_results.md",
+      "mode": "100644",
+      "git_blob": "8a638bfc8e1dabba9faf73988f889f1e4fd26549",
+      "sha256": "8800f989e26966a8e02d6c70fa9d58656d864ba52cb237b75fe0955e9743676f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/thermal_hot_contours.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/thermal_hot_contours.md",
+      "mode": "100644",
+      "git_blob": "005ac00a2c4fd60472bd01e8fbbc4be3b6a71fce",
+      "sha256": "8f84dbddbf535ac00f49389f61322ea98f7b08184728ca5a0fb0834af8f7092c"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/thermal_realtime_results.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/thermal_realtime_results.md",
+      "mode": "100644",
+      "git_blob": "72b250ab94471a65f7f75fad4baa986ae92d1e30",
+      "sha256": "11bdd14f9c67edea35e2fec6b5c46b9cecd82935b6bf23cea7efe8d9d993aa6e"
+    },
+    {
+      "destination": "haechiar/firesight_sw/docs/visible_flame_candidates.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "docs/visible_flame_candidates.md",
+      "mode": "100644",
+      "git_blob": "efabe567becc9f18c0a56e36f74a9e2718ff3f5d",
+      "sha256": "4500f724de71706f971f41e2e1dc2014b0c2f8d3cc69d3ec00d937277fe912b0"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/README.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/README.md",
+      "mode": "100644",
+      "git_blob": "383240ee98110b5c4b963338457066cc3fcb08e1",
+      "sha256": "b8187bb66eb00c181b7f99f8379aea02ec2db8bd00d2199d168ad6786e96b13c"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/.gitignore",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/.gitignore",
+      "mode": "100644",
+      "git_blob": "8baecf75044e507ac84b6ff7cde6d9d6e898481c",
+      "sha256": "e70c0e2e782dc4d5351fa58c0f9717514a81f8939937f4e579a0e9c70f5f80dc"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/README.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/README.md",
+      "mode": "100644",
+      "git_blob": "cfcdc6c26f9a0cffbb99ce11b0fe04eda2071ff5",
+      "sha256": "9966e9fb23c4ae95ee1a00b31737b8f33b8a576f27739afba24e6a86e8d1bfda"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/aligned_maps.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/aligned_maps.py",
+      "mode": "100644",
+      "git_blob": "ea9137eb3696772678c726d535ef3b5d359dc1e1",
+      "sha256": "da5debd12f2bcabe15bdef79af68f4745c1ce0c2e74f0ebc71e3045bcfd0823a"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/contour_render.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/contour_render.py",
+      "mode": "100644",
+      "git_blob": "a48070c906e14e6832d6e8b88419ce98fc5f2af5",
+      "sha256": "7da4c86a8da0d8945da4b3a542ca6394048c58d5dd21b821bf453bcdbfe8835f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/contour_tracker.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/contour_tracker.py",
+      "mode": "100644",
+      "git_blob": "603a2980b6ecb40dd9572071be0b9f5cdf2bb4eb",
+      "sha256": "b260fd29a83f184767a81e78a87650a8aa41d8013d60aa8e229dd372b20c42ba"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/display.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/display.py",
+      "mode": "100644",
+      "git_blob": "74e8c4b43013ab24aae4effb7dcfb4105ba22f18",
+      "sha256": "9c6201cc732dacdf37d1e1383d65287b5a4e67c095b06cdc0233a5eb5116229b"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/edge_filter.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/edge_filter.py",
+      "mode": "100644",
+      "git_blob": "29cf8039515b69bf5929e0cc097242abe91f618a",
+      "sha256": "c72559975b607f89d9f871ab1d90fe70e37a4504089284d474e6bc0bb5c68d24"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/hud.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/hud.py",
+      "mode": "100644",
+      "git_blob": "b5d2b85978a4365c17071412e2c0b6ec3052ecab",
+      "sha256": "b14fc9d8fe48c219168fb426d6ac00d1c288c7a98ee51c65c0d26dda4701ef39"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/motion_registration.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/motion_registration.py",
+      "mode": "100644",
+      "git_blob": "985adf36f4da2fd44e62e6d42e2b0092b32980e3",
+      "sha256": "9a031ed5bc56e86fd303f93e838baa25253032f94cb2452b824897f11eedee02"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/orin_boson_teed.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/orin_boson_teed.py",
+      "mode": "100644",
+      "git_blob": "f13f589a52bd0baf8a03a6310f46273e2c420cf0",
+      "sha256": "b5227687e8566ddd0008b9a2958bdc836923744c98dc453ed0840370ef7148af"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/replay.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/replay.py",
+      "mode": "100644",
+      "git_blob": "c4be27ed5232013d7bbb335e44c7c6010165f453",
+      "sha256": "462d10e52b367e7812bceb61615ecdc5fb6503eac6c8fb3824f2e4af124f5ce0"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/requirements.txt",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/requirements.txt",
+      "mode": "100644",
+      "git_blob": "02b18dc2fb549b6335884439daa1d4043797ec37",
+      "sha256": "ac0ab4ca823c0a46a9aea39032f616b00d0b94255c718fe2cd70dd3742a6d490"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/run_pipeline.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/run_pipeline.py",
+      "mode": "100644",
+      "git_blob": "380f639b58af8699e2ff6909ea3784f345888991",
+      "sha256": "11ee52c067ec46158b39660f0d48154cd75da1fa2f3b9b9ee0b556205d3e3460"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/smoke_eval.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/smoke_eval.py",
+      "mode": "100644",
+      "git_blob": "27a53f8c71808f05b974136a3da3944ff6c7240f",
+      "sha256": "f37a49f7bd0937f4b0cd854ffeb2d2a0780a01ccd127b222bc93a883532d126b"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/teed_core.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/teed_core.py",
+      "mode": "100644",
+      "git_blob": "1934232ad9db92da08ec59efe4ae8fcbba4cc3bd",
+      "sha256": "e98e6cc4c8321320154fd560e5cdfdf4e38bba923973ef942b7aa544ec5d1df6"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/teed_model.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/teed_model.py",
+      "mode": "100644",
+      "git_blob": "27e202c2ee59821d2f26f0850ac1b690f4e386f7",
+      "sha256": "f9246200a737f0f349e5960049644c326f12074ae865cc1e5f0861d3b9fe8c0b"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/temporal_edges.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/temporal_edges.py",
+      "mode": "100644",
+      "git_blob": "f2cd0c096c7feb0127f7315834a34e0a5e1b2920",
+      "sha256": "58da605d9269373f74c49a6218568767dd2ddc0d7245a3e1a9557344c1948cf5"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/thermal_overlay.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/thermal_overlay.py",
+      "mode": "100644",
+      "git_blob": "f1a99b51b2537c0cb0a700d3c88035dc681b16c1",
+      "sha256": "17e1a08a8f8e5d7249821ac89e2bac33ac85500093dd1ddd913c78ca6a7297c7"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/thermal_palette.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/thermal_palette.py",
+      "mode": "100644",
+      "git_blob": "a3c9446c11fd4ae491171c4be948c02b243aead6",
+      "sha256": "e99e25bf11be74a67d5af95300d413204691259c98cc031c2f962becd31f86dc"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/tools/camera_check.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/tools/camera_check.py",
+      "mode": "100644",
+      "git_blob": "8c63f4da01692843366660df294c1c0d4da29569",
+      "sha256": "a34f5d4bd56e1ae74dc139dab4889c802c3baaaa59f15ff8a192cc9328540f5f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/tools/display_check.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/tools/display_check.py",
+      "mode": "100644",
+      "git_blob": "b37fc6aaf842325bf1e2bb7d0a4eb197c1537821",
+      "sha256": "07a9eab51add63127e420c4ab6e67f6e5647df2a2b16edd329d1b558a8220885"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/tools/find_jetson.sh",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/tools/find_jetson.sh",
+      "mode": "100755",
+      "git_blob": "3299a6b244c704c9aa03cecb917217c9ffe2af5d",
+      "sha256": "f1bdcc212145b4b291ff0256c67e816250a320ba8609f0e9e2e2ec3c6e9869ff"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/tools/orin_verify.sh",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/tools/orin_verify.sh",
+      "mode": "100755",
+      "git_blob": "cba1453a59bcf0747c0c2d73518366b9a77afcde",
+      "sha256": "3a39ffac9a3a3a80aef2ad595fd26d3c95409fe421e81a90a8ac7085a4fef02f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/orin/visible_flame.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/orin/visible_flame.py",
+      "mode": "100644",
+      "git_blob": "bba6e990cf867f75ff8b8d7666da28bea0bda10c",
+      "sha256": "a5307d6dc4a5aa3f0e6f352e24f767b946fb9f3e3fede71bd0e2f19d7b956ba4"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/teed/README.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/teed/README.md",
+      "mode": "100644",
+      "git_blob": "1a3fc18185bda8b0c2c4bb206e4bfbcc7cace8a2",
+      "sha256": "aa6247167fe30748de6ee8f3a11b73a3a78bf89c1c7496b0ab832b36785f3a4c"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/teed/install.sh",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/teed/install.sh",
+      "mode": "100644",
+      "git_blob": "baf722896997fd5dc2f5938028b46dbed0ae0106",
+      "sha256": "8ae32a13a975867947c713dc11bd21a73087ab611cc8842a003fae0080deb5f7"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/teed/models/5_model.pth",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/teed/models/5_model.pth",
+      "mode": "100644",
+      "git_blob": "6f44f611f3e0c055151f10a9952cf54af67307b2",
+      "sha256": "0322caf70f588355aaaf59c2bf5872b21a4b7e9f679971a7a3bb1f69b56a01ba"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/teed/profiles/fire360_video_profiles.json",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/teed/profiles/fire360_video_profiles.json",
+      "mode": "100644",
+      "git_blob": "c6a98f8d2cad0f96e265c340c1e4cc798bddb489",
+      "sha256": "50fcf06b7e5dbe36f0131398140d993867f4837a2891f7fb422ca2f148cac62e"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/teed/results/jetson_nano_fire360_review.png",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/teed/results/jetson_nano_fire360_review.png",
+      "mode": "100644",
+      "git_blob": "d9d70a302e211217d71b9347bbae175619f512c7",
+      "sha256": "6f4a53c1f328f37bef01380cd49a1f7039f571211212fa6adc17d7308a35a501"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/teed/run_teed.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/teed/run_teed.py",
+      "mode": "100644",
+      "git_blob": "7de710fd3e920037c3197ad85a4554e3da30e601",
+      "sha256": "b68b01177464606a2e174b2aa15974089b72b287a5ea34fc7faa31663773d84d"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/teed/samples/clip_02815_frame_000068.jpg",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/teed/samples/clip_02815_frame_000068.jpg",
+      "mode": "100644",
+      "git_blob": "0a5b469fb7f199d4d9f2982875e8362343bf112c",
+      "sha256": "d6e10e4964dab15c71962b75064f176bae3f5e96e6160c22829f5f0bab53970a"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/teed/samples/ifsi_video_4_frame_000454.jpg",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/teed/samples/ifsi_video_4_frame_000454.jpg",
+      "mode": "100644",
+      "git_blob": "149db7b6d1257c880d77b639c8f7c7e222c34583",
+      "sha256": "c6267f9f2a47403602189ff7b8ef901a7fbc24d84a9ff066b9ea0ef7e18ddc04"
+    },
+    {
+      "destination": "haechiar/firesight_sw/edge/teed/teed_model.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "edge/teed/teed_model.py",
+      "mode": "100644",
+      "git_blob": "6edf6759f1cf757595cbe87b9c41909de0062b6e",
+      "sha256": "ba27ed32efcb6fd3a1229941c7b500bf98e630500860bf911bd0c6b137900ccd"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/.gitignore",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/.gitignore",
+      "mode": "100644",
+      "git_blob": "4683566fe787274425e2d5de4dce012b74d2688d",
+      "sha256": "1b3c76834ea1a9f263f4d7716f276a37ab0cc58fbacf1aa26e4e866832417f22"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/README.md",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/README.md",
+      "mode": "100644",
+      "git_blob": "35cd19e703ee5ebb6c5017d3c1781a8b7ba2b90b",
+      "sha256": "f5de039ce141f128f825ae755f6e92f3047eef65546ca10c2117729c422be2ee"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/additional_thermal_sources/ifsi10_source_5s.jpg",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/additional_thermal_sources/ifsi10_source_5s.jpg",
+      "mode": "100644",
+      "git_blob": "c437f746bef8b196366754239156c2c686df69a4",
+      "sha256": "ef38dda672aa416ec3789ecd2feaac038332e837ce004fcb9f9f2d01f4ba6d05"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/additional_thermal_sources/ifsi5_source_5s.jpg",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/additional_thermal_sources/ifsi5_source_5s.jpg",
+      "mode": "100644",
+      "git_blob": "3dab693fb8df11e7097c24cba445b00ec82c83f7",
+      "sha256": "f481b11d870fad4a578e2e4306dc28cea03462f868c4a98ea6d59bc49ccb572f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/benchmark_motion_separation.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/benchmark_motion_separation.py",
+      "mode": "100644",
+      "git_blob": "782cda19744c1a44509b158f05242c84ac974816",
+      "sha256": "f6c10ebff0df80f9a0842b72ab9fe7845d9695444c5f5e4e7ec45c87d0ea4e3f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/benchmark_thermal_color_runtime.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/benchmark_thermal_color_runtime.py",
+      "mode": "100644",
+      "git_blob": "7247539aa9dbe3cf28af31e6db29452186026689",
+      "sha256": "89a3adb705b1a89a5d3da933e0c59950c0b2380a1edabd6224343ab92b61360b"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/benchmark_thermal_outline_runtime.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/benchmark_thermal_outline_runtime.py",
+      "mode": "100644",
+      "git_blob": "8bfd0bc63af0dfa64a2258d0a95344f52101c238",
+      "sha256": "f9965dcf6950057a3d0f072592faa6d4ce5a78511962cd15641d3219778f43a0"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/benchmark_thermal_runtime.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/benchmark_thermal_runtime.py",
+      "mode": "100644",
+      "git_blob": "6e3a199080c1d0c9ecef6098e3a47462caa3f2ed",
+      "sha256": "90612969a8a5cb8da5b6ff42813d10d898ec7936fb59178b6f64385143709d28"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/cache_temporal_inputs.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/cache_temporal_inputs.py",
+      "mode": "100644",
+      "git_blob": "0ed9e95fa75bdb6004aa4641f92282e0cb0af4a9",
+      "sha256": "308d021106044b057ec8c53c79ef7fbabf7a77e22a70e12c0e892e6938237e60"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_contour_behavior.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_contour_behavior.py",
+      "mode": "100644",
+      "git_blob": "326cd77ee8610fb898b9039de614732797bd35a7",
+      "sha256": "2cc109af0ec23cb697a49c3bd8a763874ece8f792354161fcccb7fcb4af171c0"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_contour_pipeline.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_contour_pipeline.py",
+      "mode": "100644",
+      "git_blob": "2b2be4767ff5d1eedff7a74d23aa02de41305e53",
+      "sha256": "759e7e4362ae0929e422d18cda0a89c568896493f122a1c042dde90a73a87f69"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_contour_render.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_contour_render.py",
+      "mode": "100644",
+      "git_blob": "32927cbb796a1863c80faf3b2acb76c6cb6d9fa1",
+      "sha256": "06239b5fcb95d9b7bcd527c60002946607711364325ad93143257e44e24114db"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_contour_tracker.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_contour_tracker.py",
+      "mode": "100644",
+      "git_blob": "5ef93ef2b9357fbd9a75d255b1cf6f1ce959ef3e",
+      "sha256": "0dc537eead50f641f46e07949c0e62875ec0fc3025f7d673d6a4826ce5674b07"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_edge_cleanup.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_edge_cleanup.py",
+      "mode": "100644",
+      "git_blob": "8ee6ab96510c8e3662acc8326dc8856f47a28160",
+      "sha256": "7f10fe9eff158819ae499ae5958ac3b2d7e3e7125ce60da40b1da1c0cab3cc14"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_evaluate_git.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_evaluate_git.py",
+      "mode": "100644",
+      "git_blob": "1a7c29ac8eddb07e1d7eeece766bb13a196df598",
+      "sha256": "ac9ebd128be9ee2e7232b809e797f13c5f23335e77659012a3579f636e17fb05"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_motion_pipeline.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_motion_pipeline.py",
+      "mode": "100644",
+      "git_blob": "a667e700f81abf8608e4c666909567bbbdf11695",
+      "sha256": "650d33b460a26b8709e27b873bf66c3cca958b75e6b619707a1845098ceace6f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_motion_probability.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_motion_probability.py",
+      "mode": "100644",
+      "git_blob": "a542a658a2489eea71b9794c7600939f2f7fb557",
+      "sha256": "036845215ebaf77d9e5c4646a838ec978f2093a67efe57532bec6577e31c5865"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_motion_separation.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_motion_separation.py",
+      "mode": "100644",
+      "git_blob": "e62275e39178cc678138ab9eaedfee6d9a002166",
+      "sha256": "2ee691429c028dc2a394506aae14bf5e8fe21346578ea5efa780fff7ff8e474f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_temporal_edges.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_temporal_edges.py",
+      "mode": "100644",
+      "git_blob": "387c9004fae03b5a79664fbe6772f09f0b16062d",
+      "sha256": "6dd32ae3d83b545d003957ea0dcb3d9cc5125ec600e56c721e52d793145f9045"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_temporal_integration.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_temporal_integration.py",
+      "mode": "100644",
+      "git_blob": "cb0fe8d04aab11aedb7bf10282791bb54a690585",
+      "sha256": "089c9f45ce190d374363e100161e179def4095e94205657a02402fcc66ccda4f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_thermal_color_cli.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_thermal_color_cli.py",
+      "mode": "100644",
+      "git_blob": "61633fff17a5f0841db1e02a02444233215ddc26",
+      "sha256": "4f3ed0e6f8a6d691584f18c2d7a87d06ecab11a1849d93426904cfc0bfbf1a6a"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_thermal_color_integration.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_thermal_color_integration.py",
+      "mode": "100644",
+      "git_blob": "6488ba725856864a7f4d7c50cea16fded426c23c",
+      "sha256": "e7e26579ef9f75cdd30092edeef6c36695ad660c734cd3dfeea0c7ff68ceb591"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_thermal_outline_cli.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_thermal_outline_cli.py",
+      "mode": "100644",
+      "git_blob": "e23d335144d73c77857f6393d2b1dd0bf0a237a8",
+      "sha256": "c721d490469d4e86ccac6df009ada292650180e8526844516c58b6cf7ff10e0f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_thermal_palette.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_thermal_palette.py",
+      "mode": "100644",
+      "git_blob": "7078f93a24705f8aca1f2885a3e5a5bc20659082",
+      "sha256": "45168d26148d1992a4a597f9eaa9bdf257f0575b43eb16033c01cfbd37d84074"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/check_thermal_palette_integration.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/check_thermal_palette_integration.py",
+      "mode": "100644",
+      "git_blob": "6e0625be8e2bfa70670a9e6e42ae4263f016df28",
+      "sha256": "e31544a0ba031087a92d1ed6ac6646a16357ec36b0066baeae76400a46e7e98d"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/evaluate.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/evaluate.py",
+      "mode": "100644",
+      "git_blob": "3d99ab3be21b75b801b351616adb3aabba4305b4",
+      "sha256": "2f0d0c3cc1ccd804ba40f09fdfced73c8db569a86c45f5a2ea4d746527cf1261"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/evaluate_contour_stability.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/evaluate_contour_stability.py",
+      "mode": "100644",
+      "git_blob": "a1f44737a95beb7d2125ae0c02ca5c658b7858c1",
+      "sha256": "0a58ef8637e97f2e7a8db9f9214e62c632aab6d2fb17148e4167a46e7a2235ad"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/evaluate_motion_separation.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/evaluate_motion_separation.py",
+      "mode": "100644",
+      "git_blob": "b3cc87979a058ed1e304e0f8b1424b3887ee8ead",
+      "sha256": "e9c96fd8b1a31c54c9cade0580240ccb4176a1f9129ea01a68de626feae50d91"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/evaluate_temporal_edges.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/evaluate_temporal_edges.py",
+      "mode": "100644",
+      "git_blob": "5545e85ad31ad8d46b2806d6b05cdb38c71d6d39",
+      "sha256": "5db1c7ff62c62f00a48221710d6c8bd1975b1278fc36d6796f5ab4458a16f89f"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/evaluate_visible_flame.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/evaluate_visible_flame.py",
+      "mode": "100644",
+      "git_blob": "846fa551077f360d98a7f2a0cb17e27d6aa3110f",
+      "sha256": "6eba55c60e6ac1a57f3f66c83e0672838015ca6dad87df23f6a6542d112bf620"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/fixtures/previous_temporal_hud.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/fixtures/previous_temporal_hud.py",
+      "mode": "100644",
+      "git_blob": "5f60fd4bbdc00e100e35f92965061e72820ce1e4",
+      "sha256": "4450e6057b72980a3083b8a708b2e126ae1e7e82ebd9cb3bb4eeedf1121f8a47"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/fixtures/previous_temporal_ifsi4_counts.json",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/fixtures/previous_temporal_ifsi4_counts.json",
+      "mode": "100644",
+      "git_blob": "3a99ff105a8afc33b9e78b8e421d57885efddd82",
+      "sha256": "8a5191b10e4ce462029b1f19c1420a7eebfb0748b8dc4c683a378ac5751f5fd6"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/inspect_thermal_sources.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/inspect_thermal_sources.py",
+      "mode": "100644",
+      "git_blob": "93729b5889c5397c2c320b87f3fe95ff075d25f6",
+      "sha256": "afbfe018cac17894e2aa2246a80939082356a5a9cb18307788743277e22346f3"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/preview_thermal_colors.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/preview_thermal_colors.py",
+      "mode": "100644",
+      "git_blob": "60f06030aa8b9db18ea9c6f9d518e256d2a14367",
+      "sha256": "ce7c4905d597b8307fc9dbb7e689032d7405acc5ce1f35f216d9056aa87e15fe"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/preview_thermal_hot_contours.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/preview_thermal_hot_contours.py",
+      "mode": "100644",
+      "git_blob": "70359fbb79194d93a98a458ce9c08dc9ab6f046c",
+      "sha256": "09a7efc3576ca21b694538ab789a41eab068de4bb01c8f76c050c59c5a936402"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/qa_contour_videos.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/qa_contour_videos.py",
+      "mode": "100644",
+      "git_blob": "16caa80f92e79e3afd9fea2bcc0004d0f25150db",
+      "sha256": "fde932764c1f5f15380993ae4fc2cb2cc7692d95b8b64c160b6085f7c18d70ad"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/qa_full_thermal_videos.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/qa_full_thermal_videos.py",
+      "mode": "100644",
+      "git_blob": "d54b7c1421425855298497193cc56e35fe672443",
+      "sha256": "9fe6ee61dde7f151c1f514eb501115d30ff126161c911df70b48f4347c4e18fe"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/qa_temporal_videos.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/qa_temporal_videos.py",
+      "mode": "100644",
+      "git_blob": "c08d4fd23cbe5e46970bbbf9d876cf3185ee9590",
+      "sha256": "27c5be937b5c1511340741855e03642949baa1f82f5b77f01a0cfe3f20077c3c"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/render_additional_thermal_videos.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/render_additional_thermal_videos.py",
+      "mode": "100644",
+      "git_blob": "17f965a9032eaeaa5719f4545bdb04ad32561435",
+      "sha256": "1c48a915ab80944a2ebcafa77bc4ccace83c580d896148514ec43a7aa5bd1fa6"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/render_full_thermal_videos.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/render_full_thermal_videos.py",
+      "mode": "100644",
+      "git_blob": "698274185b5d7ead337bf423cd03c4e7c6f7b362",
+      "sha256": "ef0c1fe4f545332ab9396840d5d33e4b7e7affed51dbfbd67878b54cfeeaa19b"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/render_min_length_videos.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/render_min_length_videos.py",
+      "mode": "100644",
+      "git_blob": "f40d81478b9c97e301ffdcfa62dff6109648c091",
+      "sha256": "338526cf5a7f3250d0d4704a235356bb337feb8c4b4f1f45430bf38d234be8ad"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/render_motion_separated_videos.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/render_motion_separated_videos.py",
+      "mode": "100644",
+      "git_blob": "1149a0de13a5641d75094ec7c930e6834dc390d7",
+      "sha256": "5f8ac5c463feb1a29da33a729ea1d5e66a73a90cd0d6495581bb68b2219a87a2"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/render_residual_edges.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/render_residual_edges.py",
+      "mode": "100644",
+      "git_blob": "0771fd82eefbec9937e7828764112a2248c99ab8",
+      "sha256": "31c33437fd14be4e8fccd423c3b9b80499231f3a1ec3fdcfb69d5c11ba25ba68"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/render_thermal_color_videos.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/render_thermal_color_videos.py",
+      "mode": "100644",
+      "git_blob": "15057510b57bcaf44bb5413a8fb5d3351b2a15be",
+      "sha256": "21b8c2e1ab496f21bd4c18001cb06e53b77d256f68c0719dbfcd64fa55f1c783"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/render_thermal_palette_videos.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/render_thermal_palette_videos.py",
+      "mode": "100644",
+      "git_blob": "2dffabf05b759176d9d5df95e65b94fcd8cc8e60",
+      "sha256": "fbfa2340f9005d4337f0c5f2c4d2c5a08be85452b5b8d7fc5c39eeb62b6d04a2"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/run_motion_render.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/run_motion_render.py",
+      "mode": "100644",
+      "git_blob": "1a604307474a9c811a2dfb1489000100f5fb5467",
+      "sha256": "b051c047fc99fee90ee436c15518be4af8c0ea94b2388b31eed438536b996c44"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/verify_thermal_color_outputs.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/verify_thermal_color_outputs.py",
+      "mode": "100644",
+      "git_blob": "fc78d2e4ad10b8ac86348f96d3679a12397eb228",
+      "sha256": "05dc97ee3005ecec28957ccd9343cbbf3957c2fe67162d746a2f6d9e76d4a92a"
+    },
+    {
+      "destination": "haechiar/firesight_sw/experiments/teed_ui/verify_thermal_outline_outputs.py",
+      "repository": "HaechiAR/firesight_sw",
+      "commit": "339af10729a5be5436c63cc74324585e1f97777e",
+      "path": "experiments/teed_ui/verify_thermal_outline_outputs.py",
+      "mode": "100644",
+      "git_blob": "3449f53d9cc75249b7934baef49088347160d82e",
+      "sha256": "1bf0562011ff356c8afe8a87bca92f4a1c466f5357b5c78fc9066b73fb179ce0"
+    },
+    {
+      "destination": "haechiar/calib/.gitattributes",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": ".gitattributes",
+      "mode": "100644",
+      "git_blob": "897d3419612685ce0445ebf68496e20395663593",
+      "sha256": "ec2153c68daf144b49ab0586455d6de81553d9eabc5b6d3b03e0fae4903dd5c2"
+    },
+    {
+      "destination": "haechiar/calib/.gitignore",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": ".gitignore",
+      "mode": "100644",
+      "git_blob": "e44efa1477f41cac8f677dc84f725acefb27f468",
+      "sha256": "3505fbfab6f85f432caceffcd5bde32698b5f23a65fa0f6619edad7fdc9b129a"
+    },
+    {
+      "destination": "haechiar/calib/README.md",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "README.md",
+      "mode": "100644",
+      "git_blob": "f668bf60de53c85d0228c0f3bd829bffa81ecf53",
+      "sha256": "97c26e1ec3557c62fce1d406d0686cd3ce8f39c5ee2895173a9172cf87c65bf5"
+    },
+    {
+      "destination": "haechiar/calib/calib/config/experiment_hardware.yaml",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/config/experiment_hardware.yaml",
+      "mode": "100644",
+      "git_blob": "822c6be1adf341cd1769979d569c62c305a34b70",
+      "sha256": "edf7cbac7d17ef045f0f949f5384cd946d7edf1123085c050d4a2b1070faf464"
+    },
+    {
+      "destination": "haechiar/calib/calib/config/quality.yaml",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/config/quality.yaml",
+      "mode": "100644",
+      "git_blob": "d40e7c2e590f8a6ccc801bb1c9c55a381e8af4ce",
+      "sha256": "7dd5d4ae972508774339f71f5b546361b3182c92f303c9f36a7a4346b4f87e39"
+    },
+    {
+      "destination": "haechiar/calib/calib/config/sensors.yaml",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/config/sensors.yaml",
+      "mode": "100644",
+      "git_blob": "1bfe886fc63fac7d5b3269253f47ab7c23d845df",
+      "sha256": "93014bf69954c909e4cf121dbbe72f9c3fd1523a0bc9df228040762e23376895"
+    },
+    {
+      "destination": "haechiar/calib/calib/config/target.yaml",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/config/target.yaml",
+      "mode": "100644",
+      "git_blob": "dd7a41b3c0788dce7b45cfbf2883bc165da2e4bd",
+      "sha256": "24bf5c89777ee56ff0d4fc4208b7682602dfd3f90e018fb8c37adcf6db9d4021"
+    },
+    {
+      "destination": "haechiar/calib/calib/docs/design.md",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/docs/design.md",
+      "mode": "100644",
+      "git_blob": "a332248fa6c15d6bc3dffd425ada0796ab353c22",
+      "sha256": "f9fb4bd84959126dd918af3cc1050da6e5dcaafcf4bf447d412de0236a731c6d"
+    },
+    {
+      "destination": "haechiar/calib/calib/docs/experiment_verification.md",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/docs/experiment_verification.md",
+      "mode": "100644",
+      "git_blob": "5762a44fb2e176bcbf6ce654fc8ac61e27104916",
+      "sha256": "0545ad14758fa227452629d4949437e14ba290f6efd1ff629f8638a4caa17936"
+    },
+    {
+      "destination": "haechiar/calib/calib/docs/experiments.md",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/docs/experiments.md",
+      "mode": "100644",
+      "git_blob": "f9ba65b46cda2ee533d40c2216d4c6ffb62071dd",
+      "sha256": "5387eebc95800ad86fafc0cc102a38fd12771d34ab3f99a1a04024d4ae7bde7f"
+    },
+    {
+      "destination": "haechiar/calib/calib/docs/superpowers/specs/2026-08-27-firesight-calibration-system-design.md",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/docs/superpowers/specs/2026-08-27-firesight-calibration-system-design.md",
+      "mode": "100644",
+      "git_blob": "6999a668f92b430d3518e13cb5b657bc6b1553f7",
+      "sha256": "bcac9a6513c1ea5efb73a3a1ad3cc424ff36a1146723138c4fd1de9fa61afaa2"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/__init__.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/__init__.py",
+      "mode": "100644",
+      "git_blob": "986657b421386f3a58cd07d3fc20d4e5b45602e9",
+      "sha256": "4eed934efda82e3aba12f3d15add87e3f75f9f4303f8034ca34e3651e23c2f94"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/application.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/application.py",
+      "mode": "100644",
+      "git_blob": "99cfaab2cdcd681b76a1018c9e7b9a4d335bb8cc",
+      "sha256": "f209573c8cdfe1eb67e1d9cdda44096e7e429c997db0e469a1b85f5abc92a07d"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/capture.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/capture.py",
+      "mode": "100644",
+      "git_blob": "cf6df5acfa7ec480e4cce607818c39c4d931c96c",
+      "sha256": "5b64ba66941d845c92b858a1b235b51f5266e8153ade049196246253915b689e"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/cli.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/cli.py",
+      "mode": "100644",
+      "git_blob": "a093335c2e9ea4b93e074e12650a7349e14db820",
+      "sha256": "8a82e4e42159ceb43a9dbfd4e9c0343f79ceeb7f5e69127bf16bf508c0331ce5"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/config.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/config.py",
+      "mode": "100644",
+      "git_blob": "433ee6e46e6834b6acb2844dcde8e637d1b8e459",
+      "sha256": "3d43e3ed9ab62955a504f19f9155dd9f76a269893565d8a43ba8588c6fb8ff24"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/__init__.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/__init__.py",
+      "mode": "100644",
+      "git_blob": "0facef16ead63f080e31726b7ef0184fbbd9a596",
+      "sha256": "f36456913d208aaec703666ad6740bc270cefed532d505dd461a57144eee104b"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/adapters.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/adapters.py",
+      "mode": "100644",
+      "git_blob": "71e16cbb5bb3b179ec7159ba2676c9894c84bc73",
+      "sha256": "8061cb695c6e0576e8263957bc036cba43e670986d3ea07caf012cf812968a66"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/calibration.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/calibration.py",
+      "mode": "100644",
+      "git_blob": "b59e42db8fe45463675f66c7d1f5939a36f0d2a3",
+      "sha256": "42d05aaed78263eb855e175a9e1feb148ce5e10bb4dd8c2392e9c04924f9e3cd"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/capture.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/capture.py",
+      "mode": "100644",
+      "git_blob": "b1ae32edc504088c4004a958c214fa4441c9cf45",
+      "sha256": "e7de30d3aefada4d575cf78f42e2429754532aa928e3fbd4f6e5b341da3e3f3f"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/cli.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/cli.py",
+      "mode": "100644",
+      "git_blob": "73dbed72572552e27b5eeb261120b2938a7d9249",
+      "sha256": "e68fb95371ca603ca41263656316731115b147345dacc46003388c6dc43c6d1f"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/config.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/config.py",
+      "mode": "100644",
+      "git_blob": "cfc5f482e4de2d86c24eeae5e97d0390dbaebd1f",
+      "sha256": "2bf2d3d0b0e0f18430c34a8c20c54995452e434a49e4b12149c6e6b7ac623302"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/dataset.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/dataset.py",
+      "mode": "100644",
+      "git_blob": "c9dfd280bff6cbf64c46058b343f2fd8c35a1e1c",
+      "sha256": "a97aae026275944ee3a88138bd67c23c72d2fcd349d6217085edb6e85739ae4e"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/demo.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/demo.py",
+      "mode": "100644",
+      "git_blob": "5f613f697a8b81bc2891cf3a7947f443cc9161fd",
+      "sha256": "e45f6e0fb931160057a83dc4dc6720a12754edcd0e323d517c03d2f986e93ce6"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/fusion.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/fusion.py",
+      "mode": "100644",
+      "git_blob": "032aa598283e5c97371f69fce027f9d716181032",
+      "sha256": "7848b0febbc8c661ee7f0932ec94c72dd43ef938c32395351cd8e3768c884cb7"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/model.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/model.py",
+      "mode": "100644",
+      "git_blob": "902ddaef2d40e54c277b8eb5f82c96e8f05ccad4",
+      "sha256": "e5aadfe5423557377563cc34ee5b59983d2803bd55ef2bde68ba8d4ab9c78375"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/pipeline.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/pipeline.py",
+      "mode": "100644",
+      "git_blob": "3b690c951df85921062284366f72d8558a27f8e4",
+      "sha256": "c271359931613238ca22bfc4f23f02b4eaf68306feadddad400a03b2710b804b"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/profiles/radar_thermal.yaml",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/profiles/radar_thermal.yaml",
+      "mode": "100644",
+      "git_blob": "04ef144a01efd0957aef0cd48821a654b8067fde",
+      "sha256": "a6c50482d0a13ada839a11905cf3d2bf252e4f3996df08448bde083b3a30fcbb"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/profiles/rgbd_thermal.yaml",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/profiles/rgbd_thermal.yaml",
+      "mode": "100644",
+      "git_blob": "751442744a6c32aeec42a914d12c57513d83fdfb",
+      "sha256": "d8d0c9cb72f91612e24aaae35e7cbc94880080a14d2c69c91896b5102035a263"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/profiles/thermal_ai.yaml",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/profiles/thermal_ai.yaml",
+      "mode": "100644",
+      "git_blob": "b5feba557d3496926ca99cfacdf287292a2e2f5a",
+      "sha256": "7f4816e7365b3f67a7be479a517856ea9f3cf43385c8826856b1e15bb7dd3907"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/session.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/session.py",
+      "mode": "100644",
+      "git_blob": "43927fc97e8772c31f8e9afdf2be0d597a01b749",
+      "sha256": "b1623d3b72ca2f00ef0cefab83af324f8d0e296bd4e1533e9ed6d521cc2d6b0c"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/experiments/sync.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/experiments/sync.py",
+      "mode": "100644",
+      "git_blob": "26bef5f43187473e8e0ab48527572ddfba670785",
+      "sha256": "e69bfd0135a06709eccf3257bcbcf6ac494d1c5aa1fa992f9cf5df00d81f86b2"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/extrinsic.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/extrinsic.py",
+      "mode": "100644",
+      "git_blob": "7e6834e3dd2f46efbaec6e9f549112b1bd8b1695",
+      "sha256": "a6aa4172eb234b92ac34e90da3159ffa6badd0108f5ccd9fd481d2aebad1c4e0"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/geometry.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/geometry.py",
+      "mode": "100644",
+      "git_blob": "a398e50ea702d27b781826bcae77d50be82f93b5",
+      "sha256": "46a7a81cbbd8ea5633d96d2122c01c7b34478ea7f497d5a703f313a3888dbfa6"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/intrinsic.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/intrinsic.py",
+      "mode": "100644",
+      "git_blob": "cf12a2e8ac344db0f6662cd673fd88a41dda889d",
+      "sha256": "31f76ed4be645e43a6e8505ceaf8478a27845c48bcc38cf185bf94bbf3535496"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/io.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/io.py",
+      "mode": "100644",
+      "git_blob": "44de867e26d4f9464e3b0082a0de0c2f8f2160e9",
+      "sha256": "84110c1f0ca03f7d8e4ac48d13851ccc2a007f9dfd4fef7f3493e5dec8552f72"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/projection.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/projection.py",
+      "mode": "100644",
+      "git_blob": "71550f7e31492d6390a083ed785ed3d07d961da9",
+      "sha256": "24b0a8e8d2b2c958864d9458b58956b601b9c12f37dda4eb99bae8df221adc11"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/quality.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/quality.py",
+      "mode": "100644",
+      "git_blob": "040f21eaec07f5b9b90ccd8761850d316e7b4d69",
+      "sha256": "4fd5705aa59ba5da7c8e8051cda0da7f7bed6b88c865dc562a33c48732c01660"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/review.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/review.py",
+      "mode": "100644",
+      "git_blob": "ba865057a4d0acc05f0e2c58168aef1fe77f6658",
+      "sha256": "22ce808a779682f99f61b62d466d099616504550b80edaca8472e2251c419ddd"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/sources.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/sources.py",
+      "mode": "100644",
+      "git_blob": "f0e002614786412368fb2fd0cb1aa6fb396cd17f",
+      "sha256": "94154c1a580559b023d36e9131ae39bfc9639d7f071c30961aeecbe0c95bd29b"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/synthetic.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/synthetic.py",
+      "mode": "100644",
+      "git_blob": "1c31514766cdfabec547796f185e6487bc06e77b",
+      "sha256": "0eba03d4aec751d284b15075b164b7f27a897dcca1265350d3b38c6fab801a9d"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/synthetic_thermal.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/synthetic_thermal.py",
+      "mode": "100644",
+      "git_blob": "07aaf1fdbc7f9045829aeb419c36eb079ede3e68",
+      "sha256": "f2521ac8d1004d16f2d31a11463f9de3203aed00f8e51b26cf9b2045310bedfa"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/target.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/target.py",
+      "mode": "100644",
+      "git_blob": "05cfc315f0b5ac3d718c02ca1ef7c9d4aaf047a4",
+      "sha256": "6cdc39801134b98f98cff6283ab183062d9ff219a4c7be507a9d3cff8dc2327e"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/thermal.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/thermal.py",
+      "mode": "100644",
+      "git_blob": "b52ab4f9c578ac2453e448c92816efe036f6af9c",
+      "sha256": "f656969897dfb8e065c8d73d79a69d45393168c1a9b5d02cfbe51bf7a9e89911"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/wizard.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/wizard.py",
+      "mode": "100644",
+      "git_blob": "48ea2ad0e5c76b58004f2dd4cc7c85ca3211a577",
+      "sha256": "804e48cf449540fe3dff5eefbbaf2db257226a72a5267ec77d7f6f4204dedeef"
+    },
+    {
+      "destination": "haechiar/calib/calib/firesight_calib/workflow.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/firesight_calib/workflow.py",
+      "mode": "100644",
+      "git_blob": "53d7d63f705b064aac3051505b85df516c7f8b6e",
+      "sha256": "43ec50e1682d5788ac5af15feecdc96f9faa44bdbd1a87e278ceff6ad9cff0d4"
+    },
+    {
+      "destination": "haechiar/calib/calib/package.xml",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/package.xml",
+      "mode": "100644",
+      "git_blob": "caae5ee4279d61515d8217584a6c7406c5154f4d",
+      "sha256": "d3907cb16c99145d9a4574ec6b78dfe5510cb6c76ad885c66be53b6ac0eb704c"
+    },
+    {
+      "destination": "haechiar/calib/calib/resource/firesight_calib",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/resource/firesight_calib",
+      "mode": "100644",
+      "git_blob": "fa75c749379f414ad06edad971d3094169ecdca8",
+      "sha256": "cc9b3feff6d568f3575952219d201ab48bd1c1b7b526ea2d99d40802aac421b0"
+    },
+    {
+      "destination": "haechiar/calib/calib/setup.cfg",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/setup.cfg",
+      "mode": "100644",
+      "git_blob": "67a3d78a6cf93c8269875f4d526827a2ed028da4",
+      "sha256": "a30a81c0e96d14a38320626f61b65e5eab7173bb28116002611fa60fb1ff6115"
+    },
+    {
+      "destination": "haechiar/calib/calib/setup.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/setup.py",
+      "mode": "100644",
+      "git_blob": "2a4af873ee94437c5f47b0ddbf0c4a97d5d81545",
+      "sha256": "217965b1cbc226de26103ffb6f0fd1ccb408edf59bf47aec31f1c337d722019d"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_application.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_application.py",
+      "mode": "100644",
+      "git_blob": "54142e853a280121d7460f37d0a314020a200b71",
+      "sha256": "8509cc91d3cdb1f56606fb342f2bee5a9c9a7038228926a046ee290bece7d508"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_capture.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_capture.py",
+      "mode": "100644",
+      "git_blob": "481e9144043bb3932d1cc93e6f12df8c1c6ed7b1",
+      "sha256": "252cbee7be79f6fdae2b8acf08e9308c188b5da41773912d66ec1a54150ff047"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_cli.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_cli.py",
+      "mode": "100644",
+      "git_blob": "f890ce2e417443ac6e167c2088327cef164bca77",
+      "sha256": "4da26300c9e4c63b10f17595a70178f115e5267f37e5d0bcee5f4f0545eca71f"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_core.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_core.py",
+      "mode": "100644",
+      "git_blob": "150cbb64f86bbcc8876f082bd8872944d50554d2",
+      "sha256": "d8067cc5064aeba1494d9ea13bc528057f44dd4bd085ad728c70f17cf5e5abae"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_experiment_adapters.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_experiment_adapters.py",
+      "mode": "100644",
+      "git_blob": "3c87784e43fb9c8ec4c07795697d39b7c31f29c3",
+      "sha256": "1da68140249c380dbad7e678df1320983dd434930a70aa17275e49358df174a6"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_experiment_data.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_experiment_data.py",
+      "mode": "100644",
+      "git_blob": "69460388256c6b2b25f92cf04da791ada17ce439",
+      "sha256": "475c9764286d4f4ee6545466aefaa76d39e3b7b2ab0c38f28b913f0ce370942b"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_experiment_fusion.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_experiment_fusion.py",
+      "mode": "100644",
+      "git_blob": "56db2d218c9342024fa7ab8c42e112ebf25e3412",
+      "sha256": "1246d992b26ebecfdb933f762ede923eeaa57c0a2019fae5f3514b6202f6887a"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_experiment_workflow.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_experiment_workflow.py",
+      "mode": "100644",
+      "git_blob": "274b2408c6c092d62f6347f6d2ec4b2a3feebcfe",
+      "sha256": "87f95f8c4f96e07b4e2f336176dcb8edaa006f86e5d4209426563dccf48ff2c0"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_intrinsic_workflow.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_intrinsic_workflow.py",
+      "mode": "100644",
+      "git_blob": "d54f9676dd8ea8f169769c46fc5782ec64fed811",
+      "sha256": "3cf9957be181c7802a79ef127f6eec419d4ffe10f91f1d4f231968b6198ea064"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_launchers.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_launchers.py",
+      "mode": "100644",
+      "git_blob": "7b01d32c5a3dfd84f50980555a853d682dc8b879",
+      "sha256": "de09924c1b6825dd27b6795de148df7d0756c64cb56d35bb341aeeab7aba0836"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_review.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_review.py",
+      "mode": "100644",
+      "git_blob": "30194189c41f66e204f874418fd4953d1332b39b",
+      "sha256": "04cfb7aae9cae6eeb431fe4a1906fcb8b724de935271567ac8966c17f28d84a6"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_ros_integration.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_ros_integration.py",
+      "mode": "100644",
+      "git_blob": "b6024d875496a53544fd01ded0e59a0af206815a",
+      "sha256": "9dced48e636100a130fa7a20dfea63ff3da9a2be71f837c8e30267c1b1653563"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_thermal_target.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_thermal_target.py",
+      "mode": "100644",
+      "git_blob": "46c0770211b31b3b5e4a755240bd33607240d0af",
+      "sha256": "281fe6d3556a112130731bb5c44a795778bb9cd0dbc2936f2d55f47cf3d587ab"
+    },
+    {
+      "destination": "haechiar/calib/calib/test/test_wizard.py",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "calib/test/test_wizard.py",
+      "mode": "100644",
+      "git_blob": "c13a5472ff86fc2b67d30422b44a89c1a0a893f0",
+      "sha256": "fe308db44cf8053ee38c6a484d3e42374a95746d02958f270752b98363ff59f3"
+    },
+    {
+      "destination": "haechiar/calib/docs/superpowers/plans/2026-09-08-boson-intrinsic.md",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "docs/superpowers/plans/2026-09-08-boson-intrinsic.md",
+      "mode": "100644",
+      "git_blob": "1a43bdc2274819ec6398ae7075c1b04677779566",
+      "sha256": "1622731783451e254e250fa5490197fd78ad79ab1a0c6882ec6b32b071f618b7"
+    },
+    {
+      "destination": "haechiar/calib/docs/superpowers/plans/2026-09-14-review-and-apply.md",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "docs/superpowers/plans/2026-09-14-review-and-apply.md",
+      "mode": "100644",
+      "git_blob": "038809320362199a658868fd116b16f842ee67b8",
+      "sha256": "99aed29e7e87a7e4199134eba45279409dc4eef9bbfb9b45fcd7d9bdce0eea8f"
+    },
+    {
+      "destination": "haechiar/calib/docs/superpowers/plans/2026-09-24-experiment-foundation.md",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "docs/superpowers/plans/2026-09-24-experiment-foundation.md",
+      "mode": "100644",
+      "git_blob": "76c6cc98a316017994a4f7ebd6d3fd9cf31348bd",
+      "sha256": "899e28fecc8c3e5dcdaaea503847fd42889bd8f176a1372be231e0fe730bf34a"
+    },
+    {
+      "destination": "haechiar/calib/docs/superpowers/specs/2026-09-08-boson-intrinsic-design.md",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "docs/superpowers/specs/2026-09-08-boson-intrinsic-design.md",
+      "mode": "100644",
+      "git_blob": "9ae3b7d11312f5e3134dd6f901b7bbfc0eb9f219",
+      "sha256": "a7635f91e824ae2ac847c662ce2315adb14b492a77445870cf72cc5008fe6598"
+    },
+    {
+      "destination": "haechiar/calib/docs/superpowers/specs/2026-09-14-review-and-apply-design.md",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "docs/superpowers/specs/2026-09-14-review-and-apply-design.md",
+      "mode": "100644",
+      "git_blob": "dfa18d806b3e4a59e8ef992aa4a3417681a0ecad",
+      "sha256": "64ded671848dfc9f372ab912ce2223f0ddaa2f74e0ef3a74e963ee71302530b4"
+    },
+    {
+      "destination": "haechiar/calib/docs/superpowers/specs/2026-09-24-experiment-foundation.md",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "docs/superpowers/specs/2026-09-24-experiment-foundation.md",
+      "mode": "100644",
+      "git_blob": "59699e274023b8dd0c69729d03f94475a866fd9a",
+      "sha256": "6a50fded505f6f217c50bccc9c16fef858b136488a67998966a4ff2e63e210fe"
+    },
+    {
+      "destination": "haechiar/calib/pyproject.toml",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "git_blob": "906c25f4fc5b0d3ef848da8e987c79941251b097",
+      "sha256": "1c2d621e7eda41330422a750d5faa1c7c3777af182aca54b3adb8d6de3bb9428"
+    },
+    {
+      "destination": "haechiar/calib/run.ps1",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "run.ps1",
+      "mode": "100644",
+      "git_blob": "a8a1139f2c5648ba85149f292d4741f8093b00e9",
+      "sha256": "e39061513b2d18845d9d2fb5e614ae08f8aa2e571a62b2fc936fd3a3844ca15d"
+    },
+    {
+      "destination": "haechiar/calib/run.sh",
+      "repository": "HaechiAR/calib",
+      "commit": "659dca33f0aaa964540aa4d5ca78879cc7c07af7",
+      "path": "run.sh",
+      "mode": "100755",
+      "git_blob": "f9984b2145cd060ab7b7fc44c4cd8e4281b4ce14",
+      "sha256": "26b6d0244d83f5bfee7f6f14ba747c479ac9219fb8740169cfb52f45042b604e"
+    }
+  ]
+}

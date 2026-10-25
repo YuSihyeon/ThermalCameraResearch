@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+install/
+log/
+.pytest_cache/
+.venv/
+dist/
+.ruff_cache/
+*.bag
+*.db3
+*.mcap
+calibration_data/
+

@@ -1,0 +1,23 @@
+{
+  "typeCheckingMode": "basic",
+  "pythonVersion": "3.11",
+  "pythonPlatform": "All",
+  "include": [
+    "../../edge/orin/aligned_maps.py",
+    "../../edge/orin/thermal_overlay.py",
+    "../../edge/orin/edge_filter.py",
+    "../../edge/orin/hud.py",
+    "../../edge/orin/run_pipeline.py",
+    "../../edge/orin/replay.py",
+    "../../edge/orin/visible_flame.py",
+    "../../edge/orin/thermal_palette.py",
+    "../../edge/orin/temporal_edges.py",
+    "../../edge/orin/contour_tracker.py",
+    "../../edge/orin/contour_render.py",
+    "../../edge/orin/motion_registration.py"
+  ],
+  "extraPaths": [
+    "../../edge/orin",
+    "../../experiments/teed_ui"
+  ]
+}

@@ -1,0 +1,65 @@
+schema: firesight.experiment_hardware/v1
+source: user-supplied equipment table, 2026-09-24
+devices:
+  boson:
+    model: Boson 320
+    part_number: 20320A050
+    quantity: 1
+    image_size: [320, 256]
+    hfov_deg: 50
+    lens_mm: 4.3
+    pixel_pitch_um: 12
+    role: primary_thermal
+    backend: firesight_calib.experiments.adapters:boson_usb
+    device: null
+  compute:
+    model: Jetson Orin Nano
+    quantity: 1
+    jetpack_version: null
+  radar:
+    model: TI AWR6843AOPEVM
+    quantity: 1
+    role: radar_xyz
+    firmware: null
+    protocol: null
+    port: null
+    backend: null
+  csi_camera:
+    model: Sony STARVIS2 IMX678 8MP MIPI camera for ORIN NX
+    quantity: 1
+    role: auxiliary_image
+    output_format: null
+    gstreamer_pipeline: null
+    backend: null
+    note: 표의 IR 카메라 여부는 질문 상태이므로 확정하지 않음
+  rgbd:
+    model: Intel RealSense D456
+    quantity: 1
+    role: rgb_and_depth
+    backend: firesight_calib.experiments.adapters:realsense
+    serial: null
+    stream_mode: null
+  development_thermal:
+    model: TE-EV2
+    quantity: 2
+    role: alternative_thermal
+    output_format: null
+    backend: null
+  target:
+    model: Passive thermal target, precision UV print
+    quantity: 1
+    pattern: null
+    dimensions_m: null
+    note: 기존 target.yaml의 잠정 원형 타깃 규격과 별도로 실물 확인
+  imu:
+    model: MTi-610
+    quantity: 1
+    role: auxiliary_imu
+    backend: null
+    port: null
+    note: 가속도 m/s^2, 각속도 rad/s 기록 계약만 정의; 안정화/자세 융합 방식은 미정
+deferred:
+  lidar:
+    model: null
+    quantity: 1
+    enabled: false

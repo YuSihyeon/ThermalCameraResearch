@@ -1,0 +1,12 @@
+schema: firesight.target/v2
+status: provisional
+revision: boson320_27circles_quote_v1
+pattern_type: asymmetric_circles
+pattern_size: [3, 9]
+spacing_m: 0.060
+diameter_m: 0.060
+origin_m: [0.060, 0.050]
+outer_size_m: [0.600, 0.400]
+thickness_m: 0.019
+notes: "Quote proposal, not a verified manufacturing drawing. x=0.06+0.06*i, y=0.05+0.06*(2*j+i%2), i=0..8, j=0..2. Confirm geometry and thermal contrast on the physical board."
+

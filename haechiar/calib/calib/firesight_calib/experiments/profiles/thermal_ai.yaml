@@ -1,0 +1,11 @@
+schema: firesight.experiment_profile/v1
+mode: thermal_ai
+streams: [thermal]
+group_id: null
+sources: []
+registration: null
+edge_model: null
+pending:
+  - 사용할 열화상 장치와 출력 모드
+  - 촬영 장소/조건별 group_id와 수집 계획
+  - 레이블 정의, 학습 모델, 체크포인트, 평가 데이터

@@ -1,0 +1,8 @@
+# Keep reproducible scripts and small regression fixtures; generated runs stay local.
+/*/
+!/fixtures/
+/fixtures/__pycache__/
+!/additional_thermal_sources/
+/additional_thermal_sources/*
+!/additional_thermal_sources/ifsi10_source_5s.jpg
+!/additional_thermal_sources/ifsi5_source_5s.jpg

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.json.tmp
+*.mp4
+*.avi
+*.mkv
+jetson_teed_metrics.json
+.omx/
+
+# 로컬 실행 결과는 제외하되 검토용 기준 이미지는 유지한다.
+edge/teed/results/*
+!edge/teed/results/jetson_nano_fire360_review.png
+
+# Boson raw 프레임은 용량 때문에 git에 넣지 않는다 (data/collection/README.md 참고)
+*.tif
+*.tiff

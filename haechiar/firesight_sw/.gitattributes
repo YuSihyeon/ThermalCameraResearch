@@ -1,0 +1,15 @@
+* text=auto
+
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+
+*.pth binary
+*.png binary
+*.jpg binary
+
+*.csv text
+*.bat.example text eol=crlf
+*.tif binary
+*.tiff binary

@@ -1,0 +1,8 @@
+# Windows, Python 3.12 기준 (2026-10 촬영에 사용한 버전)
+flirpy==0.6.2
+pyserial==3.5
+numpy==2.3.5
+opencv-contrib-python==5.0.0.93
+tifffile==2026.9.20
+pillow==12.3.0
+psutil==7.2.2

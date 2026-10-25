@@ -1,0 +1,12 @@
+schema: firesight.experiment_profile/v1
+mode: rgbd_thermal
+streams: [thermal, rgb, depth]
+group_id: null
+sources: []
+registration: null
+edge_model: null
+pending:
+  - 실제 장치 식별자와 RGB/깊이 스트림 모드
+  - 열 타깃 제작 규격 확인 및 동시 관측 보정 촬영
+  - 깊이 영상 좌표계에서 열영상 좌표계로의 외부 보정
+  - 시간 차이 허용값 실측 및 실험 합격 기준

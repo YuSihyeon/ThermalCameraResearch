@@ -1,0 +1,9 @@
+{
+  "description": "Previous probability-only HUD, Fire360 IFSI4 frames 300..303. Captured before contour integration.",
+  "after_pixels": [
+    2726,
+    2732,
+    2740,
+    2849
+  ]
+}

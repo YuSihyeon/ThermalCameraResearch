@@ -1,0 +1,10 @@
+schema: firesight.quality/v1
+thresholds:
+  boson_intrinsic_rms_px: 0.8
+  camera_extrinsic_heldout_median_px: 2.0
+  livox_plane_residual_mm: 15.0
+  extrinsic_translation_repeat_mm: 10.0
+  extrinsic_rotation_repeat_deg: 0.3
+  min_intrinsic_views: 15
+  min_extrinsic_views: 8
+

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>firesight_calib</name>
+  <version>0.3.0</version>
+  <description>Boson thermal intrinsic calibration with USB and ROS 2 image capture.</description>
+  <maintainer email="dev@haechiar.local">HaechiAR</maintainer>
+  <license>Proprietary</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+

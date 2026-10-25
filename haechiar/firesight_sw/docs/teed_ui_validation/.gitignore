@@ -1,0 +1,6 @@
+# Publish only the algorithm diagrams and portable checker configuration.
+/*
+!/.gitignore
+!/teed_algorithm_status.png
+!/temperature_contract.png
+!/pyrightconfig.json
